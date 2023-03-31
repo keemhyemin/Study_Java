@@ -1,0 +1,13 @@
+package pack01_Variable;
+
+public class Ex02_Variable {
+	public static void main(String[] args) {
+		int a;
+		int b;
+		b = 30;
+		int c = 40;
+		System.out.println(b);
+		System.out.println(c);
+	}
+
+}

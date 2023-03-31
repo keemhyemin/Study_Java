@@ -1,0 +1,8 @@
+package pack01_Variable;
+
+public class Ex01_Variable {
+	public static void main(String[] args) {
+		System.out.println("KHM10");
+	}
+
+}

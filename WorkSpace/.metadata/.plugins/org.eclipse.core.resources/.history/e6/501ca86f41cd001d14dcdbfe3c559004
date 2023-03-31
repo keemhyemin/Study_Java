@@ -1,0 +1,14 @@
+package pack02_byte;
+
+public class Ex01_Byte {
+	public static void main(String[] args) {
+		// { } <= main 지역
+		byte var1;
+		var1 = 0;
+		byte var2 = 10;
+		// 변수타입 변수명; <= 선언
+		// 선언된변수 = 값; <= 할당
+
+	}
+
+}

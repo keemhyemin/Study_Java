@@ -1,0 +1,14 @@
+package pack09_Scanner;
+
+import java.util.Scanner;
+
+public class Ex02_Scanner {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		String str = sc.nextLine();
+		int num = Integer.parseInt(str);
+		System.out.println(num + 20);
+	}
+
+}

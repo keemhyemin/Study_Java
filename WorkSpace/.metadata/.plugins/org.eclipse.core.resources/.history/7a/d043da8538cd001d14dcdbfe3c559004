@@ -1,0 +1,11 @@
+package pack01_Variable;
+
+public class Ex03_Variable {
+	// ctrl + shift + f == ¡Ÿ¡§∏Æ
+	public static void main(String[] args) {
+		int value = 30;
+		int result = value + 10;
+
+	}
+
+}

@@ -1,0 +1,27 @@
+
+public class Test06 {
+	public static void main(String[] args) {
+//		명명 규칙(네이밍룰): Class(.java)파일은 대문자로 시작
+//		변수는 소문자로 시작, 의미있는 단어를 연결해서 조합(단어 연결부는 대문자로: 카멜 표기법)
+		int kor, eng, math, sci, pe;
+		kor = 90;
+		eng = 95;
+		math = 100;
+		sci = 80;
+		pe = 70;
+		System.out.println(kor);
+		System.out.println(eng);
+		System.out.println(math);
+		System.out.println(sci);
+		System.out.println(pe);
+		
+//		형변환(Casting): 서로 다른 타입의 변수를 변환시켜 사용함.
+//		ex) int <-> double, String <-> int
+//		int < double
+		int iValue = 10;
+		double dValue = iValue + 0.5; // ==> 자동형변환
+		System.out.println("iValue 값: " + iValue);
+		System.out.println("dValue 값: " + dValue);
+	}
+
+}

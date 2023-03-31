@@ -1,0 +1,15 @@
+package pack08_Casting;
+
+public class Ex02_Casting {
+	public static void main(String[] args) {
+//		문자열 = "12" + 34 = 1234
+//		문자열 타입으로/ 이유는 문자열 + 어떤 값 = 문자열
+//		"1"(String) 다르다 1(숫자)
+		String sum = "12" + 34;
+		System.out.println(sum);
+//		어떤 값을 String으로 바꾸는 것은 엄청나게 간단하다.
+		String sum2 = 1234+""; //더블 코테이션을 더한다.
+		System.out.println(sum2);
+	}
+
+}

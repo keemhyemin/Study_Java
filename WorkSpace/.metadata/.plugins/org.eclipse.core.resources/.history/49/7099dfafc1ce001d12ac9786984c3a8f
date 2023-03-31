@@ -1,0 +1,15 @@
+
+public class Test04 {
+	public static void main(String[] args) {
+		// int(소숫점이 없는 정수), double(소숫점이 있는 실수)
+		// char(한글자==문자), String(두글자 이상의 문자열)
+		// 변수를 선언하는 규칙: 변수 타입 네이밍(이름); <= 선언
+		// 메모리(컴퓨터 저장공간)를 효율적으로 쓰기 우해서 데이터의 표현 범위별로
+		// 또는 데이터의 유형에 따라 변수타입은 나눠져있음.
+		int iNum;
+		double dNum;
+		char cChr;
+		String sStr;
+		
+	}
+}

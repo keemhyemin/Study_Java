@@ -1,0 +1,1 @@
+MsgBox "Khm", vbInformation, "KhmMsg"

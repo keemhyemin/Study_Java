@@ -1,0 +1,16 @@
+package pack01_Variable;
+
+public class Ex03_Variable {
+	// ctrl + shift + f == 줄정리
+	// ctrl + / == 선택한 행에 대해서 모두 주석 처리
+	public static void main(String[] args) {
+		int value=0;
+		int result = value + 10;
+		System.out.println(result);
+		
+//		int value = 10;
+//		int result = value + 10; // result에 20이 담겼을 것 같다.
+
+	}
+
+}
