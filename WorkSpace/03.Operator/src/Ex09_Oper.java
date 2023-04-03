@@ -1,0 +1,16 @@
+
+public class Ex09_Oper {
+	public static void main(String[] args) {
+		// 변수타입 변수명 = 값 비교식 ? "반환값1" : "반환값2";
+		// int result = num < 10 ? 1 : 식2 ? 식3....
+		// score라는 변수가 있음 해당 변수의 값이 90보다 크면 A 80보다 크면 B...D
+		int score = 91;
+		String grade = score > 90 ? "A" : score > 80 ? "B" : "D";
+		System.out.println(grade);
+		// 70보다 크면 C 60 보다 크면 D 그 외에는 E
+		int score2 = 51;
+		String grade2 = score2 > 90 ? "A" : score2 > 80 ? "B" : score2 > 70 ? "C" : score2 > 60 ? "D" : "E";
+		System.out.println(grade2);
+	}
+
+}
