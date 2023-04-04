@@ -1,0 +1,15 @@
+
+public class Ex07_Oper {
+	public static void main(String[] args) {
+		// 비교 연산자 (==, <, >, <=, >=)
+		// 초과, 미만: 0 < 4 : 1, 2, 3
+		// 이상, 이하: 0 <=4 : 0, 1, 2, 3, 4
+		int num = 10;
+		String result = num == 10 ? "맞다" : "틀리다" ;
+		System.out.println(result);
+		
+		int resultInt = num == 10 ? 1 : 2 ;
+		System.out.println(resultInt);
+	}
+
+}

@@ -1,0 +1,11 @@
+
+public class Ex05_Oper {
+	public static void main(String[] args) {
+		int result = 0;
+		// result에 10을 더한 결과를 다시 result에 할당
+		result += 10;
+		result += 10;
+		System.out.println(result);
+	}
+
+}

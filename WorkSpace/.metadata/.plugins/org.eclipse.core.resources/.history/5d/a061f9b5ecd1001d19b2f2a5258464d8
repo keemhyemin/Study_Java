@@ -1,0 +1,18 @@
+
+public class Ex07_Oper {
+	public static void main(String[] args) {
+		// 비교 연산자 (==, <, >, <=, >=)
+		// 초과, 미만: 0 < 4 : 1, 2, 3
+		// 이상, 이하: 0 <=4 : 0, 1, 2, 3, 4
+		int num = 10;
+		String result = num == 10 ? "맞다" : "틀리다" ;
+		System.out.println(result);
+		
+		int resultInt = num == 11 ? 1 : 2 ;
+		System.out.println(resultInt);
+		// num에 있는 숫자가 9 이하면 True, 그 외에는 False
+		String resultStr = num >= 9 ? "True" : "False";
+		System.out.println(resultStr);
+	}
+
+}

@@ -1,0 +1,11 @@
+
+public class Ex03_Bool {
+	public static void main(String[] args) {
+		// true, false만 저장이 가능한 변수
+		boolean bTrue = 1;
+		boolean bFalse = 0;
+		System.out.println(bTrue);
+		System.out.println(bFalse);
+	}
+
+}

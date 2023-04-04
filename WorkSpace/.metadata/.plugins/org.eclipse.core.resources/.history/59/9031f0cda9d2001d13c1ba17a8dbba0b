@@ -1,0 +1,8 @@
+package pack01_if;
+
+public class Ex01_if {
+	public static void main(String[] args) {
+		
+	}
+
+}

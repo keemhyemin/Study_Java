@@ -1,0 +1,16 @@
+
+public class Ex04_Oper {
+	public static void main(String[] args) {
+		// 사칙연산 + 나머지
+		int value1 = 5, value2 = 2;
+		// 연산을 먼저하게 하기 위한 구분자 => ()
+		System.out.println("value1 + value2 = " + value1 + value2);
+		System.out.println("value1 - value2 = " + (value1 - value2));
+		System.out.println("value1 * value2 = " + (value1 * value2));
+		System.out.println("value1 / value2 = " + (value1 / value2));
+		
+		
+		
+	}
+
+}
