@@ -1,0 +1,29 @@
+package pack04_While;
+
+public class Test01_While {
+	public static void main(String[] args) {
+
+		int i = 1;
+		while (i < 9) {
+			int j = 1;
+			i++;
+			while (j <= 9) {
+				System.out.print(i + "x" + j + "=" + (i * j) + " ");
+				j++;
+			}
+			System.out.println();
+		}
+		int k = 1;
+		while (k < 9) {
+			int l = 1;
+			k++;
+			while (l <= 9) {
+				System.out.println(k + "x" + l + "=" + (k * l) + " ");
+				l++;
+			}
+		}
+		
+	}
+
+}
+

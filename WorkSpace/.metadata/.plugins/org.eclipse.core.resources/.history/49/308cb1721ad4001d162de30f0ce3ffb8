@@ -1,0 +1,19 @@
+package pack04_While;
+
+public class Ex03_While {
+	public static void main(String[] args) {
+		// while 이용해서 1~100 반복
+		// 홀수 일때는 홀수, 짝수 일때는 짝수
+		
+		int i =1;
+		while (i <= 100) {
+			i++;
+			if (i % 2 == 1) {
+				System.out.println("홀수: " + i);
+			} else {
+				System.out.println("짝수: " + i);
+			}
+		}
+	}
+
+}

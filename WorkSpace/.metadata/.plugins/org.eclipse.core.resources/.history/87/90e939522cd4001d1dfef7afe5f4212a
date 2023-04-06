@@ -1,0 +1,8 @@
+package pack06_Game;
+
+public class Ex02_Score {
+	public static void main(String[] args) {
+		
+	}
+
+}

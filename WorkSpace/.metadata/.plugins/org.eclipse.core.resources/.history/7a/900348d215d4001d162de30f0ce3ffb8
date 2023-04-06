@@ -1,0 +1,10 @@
+package pack04_While;
+
+public class Ex01_While {
+	public static void main(String[] args) {
+		// for(①초기식; ②조건식; ④증감식)
+			// ③반복할 코드
+		//}
+	}
+
+}

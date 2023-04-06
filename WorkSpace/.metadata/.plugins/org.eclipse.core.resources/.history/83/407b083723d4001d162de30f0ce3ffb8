@@ -1,0 +1,23 @@
+package pack04_While;
+
+public class Test02_While {
+	public static void main(String[] args) {
+		
+		// 별 찍기
+		int i = 1;
+		while (i <= 5) {
+			int j = 1;
+			while (j<=i) {
+				System.out.print("★");
+				j++;
+			}
+			i++;
+			System.out.println();
+		}
+		System.out.println("===============================================");
+		
+		// 사용자가 입력한 수만큼의 구구단
+		
+	}
+
+}
