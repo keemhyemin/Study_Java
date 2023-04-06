@@ -16,7 +16,7 @@ public class Ex01_If {
 		}
 		System.out.println("여기까지");
 		
-		// score 숫자가 홀, 짝 판단
+		// score 숫자 홀, 짝 판단
 		if (score % 2 == 0) {
 			System.out.println("짝수");
 		}

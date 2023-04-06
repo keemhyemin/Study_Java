@@ -1,0 +1,34 @@
+package pack03_For;
+
+import java.util.Scanner;
+
+public class Test01_For {
+	public static void main(String[] args) {
+
+		for (int i = 1; i <=5; i++) {
+			for (int j = 1; j <= i; j++) {
+				System.out.print("★");
+			}
+			System.out.println();
+		}
+		System.out.println("============================================");
+		
+		Scanner sc = new Scanner(System.in);
+		int num = Integer.parseInt(sc.nextLine());
+		if (num < 2) {
+			System.out.println("잘못된 숫자");
+		}else {
+			for (int i = 1; i <= 9; i++) {
+				System.out.println(num + "x" + i + "=" + num*i);
+			}
+		}
+		System.out.println("============================================");
+		for (int i = 1; i <= 5; i++) {
+			for (int j=5; j>= i; j--) {
+				System.out.print("★");
+			}
+			System.out.println();
+		}
+
+	}
+}

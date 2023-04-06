@@ -1,0 +1,22 @@
+package pack03_For;
+
+public class Ex02_For {
+	public static void main(String[] args) {
+		// 제어문은 무한하게 중첩 가능
+		// 0부터 9까지 10번 반복하는 반복문 안보고 만들기
+
+//		for (int i=1; i<=10; i++) {
+//			if (i % 2 == 0) {
+//				System.out.println("짝수: " + i);
+//			} else {
+//				System.out.println("홀수: " + i);
+//			}
+//		}
+		int sum = 0;
+		for (int i=1; i<=10; i++) {
+			sum += i;
+		}
+			System.out.println(sum);
+	}
+
+}
