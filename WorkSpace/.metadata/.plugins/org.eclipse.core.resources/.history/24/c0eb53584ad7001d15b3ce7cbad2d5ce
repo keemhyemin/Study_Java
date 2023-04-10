@@ -1,0 +1,27 @@
+package pack02_Array;
+
+public class Ex02_Array {
+	public static void main(String[] args) {
+		// 1~10의 크기를 가진 int형 배열 만들고 10 ~ 100까지 값 할당하고 출력
+
+		int[] numArray = new int[10]; // 0 ~ 9
+//		numArray[0] = 10;
+//		numArray[1] = 20;
+//		numArray[2] = 30;
+//		numArray[3] = 40;
+//		numArray[4] = 50;
+//		numArray[5] = 60;
+//		numArray[6] = 70;
+//		numArray[7] = 80;
+//		numArray[8] = 90;
+//		numArray[9] = 100;
+		
+		// 값 할당도 for문에서 해보자
+		for (int i = 0; i < 10; i++) {
+			numArray[i] += (i+1)*10;
+			System.out.println("numArray[" + i + "]: " + numArray[i]);
+		}
+
+	}
+
+}

@@ -1,0 +1,18 @@
+package pack02_Array;
+
+public class Ex03_Array {
+	public static void main(String[] args) {
+		// 데이터타입[] 배열이름 = new 데이터타입[크기];
+		// 내가 알고있는 모든 것들 <-
+
+		// String[0]에 어떤 값이 들어있을까? String[0]에는 null값이 들어있다(참조형 변수들의 초기값)
+		// int[0]에는 어떤 값이 들어있을까? 초기값: 0 <- 숫자형태의 변수타입은 전부 0
+		// String[] animals = new String[3];
+		String[] animals = {"강아지", "고양이", "비둘기"};
+		for(int i=0; i<3; i++) {
+			System.out.println(animals[i]);
+		}
+		
+	}
+
+}
