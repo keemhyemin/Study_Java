@@ -1,0 +1,15 @@
+package pack03_Array2;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Test01_Game {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int userNum = Integer.parseInt(sc.nextLine());
+		int[] array = new int[userNum];
+		
+
+	}
+
+}
