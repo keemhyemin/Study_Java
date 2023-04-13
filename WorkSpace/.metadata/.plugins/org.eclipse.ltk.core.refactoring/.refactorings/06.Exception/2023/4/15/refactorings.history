@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;pack02_tryCatch&apos; to &apos;pack02_TryCatch&apos;&#x0D;&#x0A;- Original project: &apos;06.Exception&apos;&#x0D;&#x0A;- Original element: &apos;06.Exception/src/pack02_tryCatch&apos;&#x0D;&#x0A;- Renamed element: &apos;06.Exception/src/pack02_TryCatch&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;pack02_tryCatch&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;pack02_tryCatch" name="pack02_TryCatch" qualified="false" references="true" stamp="1681352844133" textual="false" version="1.0"/>
+</session>

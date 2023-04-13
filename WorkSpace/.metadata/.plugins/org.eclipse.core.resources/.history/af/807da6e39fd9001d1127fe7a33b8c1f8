@@ -1,0 +1,15 @@
+package pack02_tryCatch;
+
+public class Ex04_TryNewCatch {
+	public static void main(String[] args) {
+		// 1부터 100까지의 누적합을 구하시오
+		// 단 누적합이 777 이상이 되면, 계산을 중지하고 결과를 출력해주세요.
+		
+		int sum=0;
+		for (int i=1; i<=100; i++) {
+			sum += i;
+		}
+		System.out.println(sum);
+	}
+
+}
