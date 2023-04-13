@@ -13,8 +13,8 @@ public class Test01_Game {
 		System.out.println("난이도: " + level);
 
 		int[] array = new int[level];
-		int random = new Random().nextInt(level);
-		array[random] = 3;
+		int rIndex = new Random().nextInt(level);
+		array[rIndex] = 3;
 
 		int userNum;
 		System.out.println("숫자를 맞춰보세요!(난이도 이하의 숫자를 입력하세요.)");
@@ -24,7 +24,7 @@ public class Test01_Game {
 		while (true) {
 			count++;
 			userNum = Integer.parseInt(sc.nextLine());
-			if (userNum - 1 == random) {
+			if (userNum - 1 == rIndex) {
 				System.out.println("정답");
 				System.out.println("시도 횟수는 " + count + "번 입니다.");
 				break;
