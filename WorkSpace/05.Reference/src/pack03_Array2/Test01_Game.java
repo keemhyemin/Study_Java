@@ -1,5 +1,6 @@
 package pack03_Array2;
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -17,13 +18,13 @@ public class Test01_Game {
 
 		int userNum;
 		System.out.println("숫자를 맞춰보세요!(난이도 이하의 숫자를 입력하세요.)");
-		
-		int count=0;
+
+		int count = 0;
+		System.out.println("답을 입력하세요.");
 		while (true) {
 			count++;
-			System.out.println("답을 입력하세요.");
 			userNum = Integer.parseInt(sc.nextLine());
-			if (userNum == random) {
+			if (userNum - 1 == random) {
 				System.out.println("정답");
 				System.out.println("시도 횟수는 " + count + "번 입니다.");
 				break;
@@ -31,7 +32,5 @@ public class Test01_Game {
 				System.out.println("오답");
 			}
 		}
-
 	}
-
 }
