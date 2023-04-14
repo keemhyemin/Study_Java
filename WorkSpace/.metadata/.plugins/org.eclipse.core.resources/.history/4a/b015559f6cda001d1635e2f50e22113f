@@ -1,0 +1,9 @@
+package pack03_Constructor;
+
+public class Ex02_Korean {
+	
+	String nation = "대한민국";
+	String name, ssn; // 사람마다 다른 속성, 때문에 초기값 ㄴㄴ(null, null))
+
+}
+

@@ -1,0 +1,8 @@
+package pack02_Field;
+
+public class Ex02_FieldMain {
+	public static void main(String[] args) {
+		
+	}
+
+}

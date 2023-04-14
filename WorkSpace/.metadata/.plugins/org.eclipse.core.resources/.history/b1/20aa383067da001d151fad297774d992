@@ -1,0 +1,18 @@
+package pack02_Field;
+
+public class Ex02_FieldMain {
+	public static void main(String[] args) {
+		
+		Ex02_Field field = new Ex02_Field();
+		
+		System.out.println(field.strField);
+		System.out.println(field.bField);
+		System.out.println(field.intField);
+		System.out.println(field.dField);
+		System.out.println(field.chField);
+		System.out.println(field.arr);
+		System.out.println(field.sc);
+		System.out.println(field.random);
+	}
+
+}

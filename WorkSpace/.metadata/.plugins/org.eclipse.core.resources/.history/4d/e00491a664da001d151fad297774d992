@@ -1,0 +1,9 @@
+package pack02_Field;
+
+public class Ex01_CarMain { // Main 붙었으니까 main 메소드 만들기
+	public static void main(String[] args) {
+		
+		Ex01_Car car1 = new Ex01_Car();
+	}
+
+}

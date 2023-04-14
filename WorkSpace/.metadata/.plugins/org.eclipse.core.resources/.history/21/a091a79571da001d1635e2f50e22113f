@@ -1,0 +1,19 @@
+package pack03_Constructor;
+
+public class Test01_Member {
+	
+	String name;
+	String id;
+	String pw;
+	int age;
+	
+	public Test01_Member(String name, String id, String pw, int age) {
+		
+		this.name = name;
+		this.id = id;
+		this.pw = pw;
+		this.age = age;
+	}
+	
+	
+}

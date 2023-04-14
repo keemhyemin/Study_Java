@@ -3,7 +3,21 @@
     <fullyQualifiedTypeName name="java.security.DomainCombiner"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
+    <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="pack01_Class.Ex01_Student"/>
+    <fullyQualifiedTypeName name="pack02_Field.Ex01_Car"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="pack02_Field.Ex02_Field"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="pack02_Field.Ex03_Object"/>
+    <fullyQualifiedTypeName name="pack03_Constructor.Ex01_Cons"/>
+    <fullyQualifiedTypeName name="pack03_Constructor.Ex02_Korean"/>
+    <fullyQualifiedTypeName name="pack03_Constructor.Ex03_Car"/>
+    <fullyQualifiedTypeName name="pack03_Constructor.Test01_Member"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,15 @@
+package pack03_Constructor;
+
+public class Test02_Phone {
+	String company, name, color;
+	double weight;
+	
+	public Test02_Phone(String company, String name) {
+		
+		this.company = company;
+		this.name = name;
+	}
+	
+	
+	
+}

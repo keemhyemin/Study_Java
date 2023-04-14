@@ -1,0 +1,7 @@
+package pack01_Class;
+
+// 학생(물리적, 추상적)을 자바 코드로 표현한 것
+// 기능, 속성 없다
+public class Ex01_Student {
+
+}
