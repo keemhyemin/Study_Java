@@ -1,0 +1,9 @@
+package pack01_Base;
+
+public class Ex02_CaculatorMain {
+	public static void main(String[] args) {
+		Ex02_Caculator ec = new Ex02_Caculator();
+		ec.powerOn();
+	}
+	
+}
