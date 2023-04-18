@@ -1,0 +1,42 @@
+package pack01_Base;
+
+import java.util.Scanner;
+
+public class Ex06_Method {
+
+	void method1() {
+		System.out.println(" method1 ");
+	}
+
+	void method2(int x) {
+		System.out.println(" method2 " + x);
+	}
+
+	String method3() {
+		System.out.println(" method3 ");
+		return null;
+	}
+
+	int method4(int x, int y) {
+		int sum = x + y;
+		System.out.println(" method4 " + sum);
+		return sum;
+	}
+
+	String sMethod() {
+		return null;
+	}
+
+	double dMethod() {
+		return 0.0;
+	}
+
+	int[] aMethod() {
+		return null;
+	}
+
+	Scanner scanMethod() {
+		return null;
+	}
+
+}

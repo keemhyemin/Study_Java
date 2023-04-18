@@ -1,0 +1,14 @@
+package pack01_Base;
+
+public class Ex06_MethodMain {
+	public static void main(String[] args) {
+		Ex06_Method em = new Ex06_Method();
+		em.method1(7); // void
+		em.method2(); // void
+		em.method3(10, 10); // int
+		em.method4(); // String
+		System.out.println(em.method1(7));
+		System.out.println();
+	}
+
+}

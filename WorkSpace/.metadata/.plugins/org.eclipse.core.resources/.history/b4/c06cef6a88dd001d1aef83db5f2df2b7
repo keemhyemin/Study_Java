@@ -1,0 +1,26 @@
+package pack01_Base;
+
+public class Ex06_Method {
+	
+	void method1 (int x) {
+		System.out.println("method1" + x);
+	}
+	void method2 () {
+		System.out.println("method2");
+	}
+	
+	int method3 (int x, int y) {
+		int sum = x+y;
+		System.out.println("method3");
+		return sum;
+	}
+	String method4 () {
+		System.out.println("method4");
+		return null;
+	}
+	public static void main(String[] args) {
+		Ex06_Method em = new Ex06_Method();
+		em.method3(10, 10)
+	}
+
+}

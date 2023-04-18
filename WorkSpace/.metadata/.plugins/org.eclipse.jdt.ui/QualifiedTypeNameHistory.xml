@@ -12,7 +12,6 @@
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="pack01_Class.Ex01_Student"/>
     <fullyQualifiedTypeName name="pack02_Field.Ex01_Car"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="pack02_Field.Ex02_Field"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="pack02_Field.Ex03_Object"/>
@@ -21,4 +20,16 @@
     <fullyQualifiedTypeName name="pack03_Constructor.Ex03_Car"/>
     <fullyQualifiedTypeName name="pack03_Constructor.Test01_Member"/>
     <fullyQualifiedTypeName name="pack03_Constructor.Test02_Phone"/>
+    <fullyQualifiedTypeName name="pack01_Base.Ex01_Car"/>
+    <fullyQualifiedTypeName name="pack01_Base.Ex02_Caculator"/>
+    <fullyQualifiedTypeName name="pack01_Base.Ex03_Computer"/>
+    <fullyQualifiedTypeName name="pack01_Base.Ex04_Car"/>
+    <fullyQualifiedTypeName name="pack01_Base.Const"/>
+    <fullyQualifiedTypeName name="pack01_Base.Ex06_Method"/>
+    <fullyQualifiedTypeName name="pack01_Base.Ex07_OverLoading"/>
+    <fullyQualifiedTypeName name="pack02_Static.Ex01_Static"/>
+    <fullyQualifiedTypeName name="pack02_Static.Ex02_Caculator"/>
+    <fullyQualifiedTypeName name="pack02_Static.Test01_Method"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="pack02_Static.Test01_MethodMain"/>
 </qualifiedTypeNameHistroy>

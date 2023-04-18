@@ -1,0 +1,14 @@
+package pack01_Base;
+
+public class Ex05_Const {
+	int field1;
+	String field2; // 생성자 메소드 만들어보기
+	// 생성자 메소드: 클래스 내부에 있으며 클래스와 이름이 같음
+
+	public Ex05_Const(int field1, String field2) {
+
+		this.field1 = field1;
+		this.field2 = field2;
+	}
+
+}
