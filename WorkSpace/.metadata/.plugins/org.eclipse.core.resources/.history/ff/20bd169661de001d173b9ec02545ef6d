@@ -1,0 +1,20 @@
+package pack04_OOP2;
+
+public class StudentDTO {
+	int num, kor, mat, eng, sum = 0;
+	String name;
+	double avg;
+	
+	public StudentDTO(int num, String name, int kor, int mat, int eng) {
+		this.num = num;
+		this.name = name;
+		this.kor = kor;
+		this.mat = mat;
+		this.eng = eng;
+		this.sum = kor + mat + eng;
+		this.avg = (double)sum / 3;
+	}
+	
+	
+
+}

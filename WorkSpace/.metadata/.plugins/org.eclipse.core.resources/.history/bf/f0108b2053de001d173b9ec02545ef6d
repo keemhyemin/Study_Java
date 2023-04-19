@@ -1,0 +1,15 @@
+package pack03_OOP1;
+
+public class ProductMain {
+	public static void main(String[] args) {
+		// 상품 두개를 생성하기
+		// 1. 컴퓨터, 2. 노트북
+		// display() 메소드를 이용해서 내용 출력하기
+		
+		Product pd = new Product();
+		pd.display(1, "컴퓨터");
+		pd.display(2, "노트북");
+		
+	
+	}
+}

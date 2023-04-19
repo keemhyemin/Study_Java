@@ -1,0 +1,8 @@
+package pack04_OOP2;
+
+// Student Class: 학생의 성적정보를 관리할 수 있게 만든 설계도
+public class Student {
+	int num, kor, mat, eng, sum;
+	String name;
+	double avg;
+}

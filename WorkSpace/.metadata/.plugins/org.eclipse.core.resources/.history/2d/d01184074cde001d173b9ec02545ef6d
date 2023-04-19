@@ -1,0 +1,16 @@
+package pack02_Static;
+
+
+public class Test01_Method {
+	String id, pw;
+
+	boolean login() {
+		if(id.equals("master") && pw.equals("master1234")) {
+			System.out.println("로그인 되었습니다.");
+			return true;
+		}else {
+			System.out.println("로그인 실패하셨습니다.");
+			return false;
+		}
+	}
+}

@@ -1,0 +1,18 @@
+package pack04_OOP2;
+
+public class StudentMain {
+	public static void main(String[] args) {
+		Student st = new Student();
+		st.num = 1;
+		st.name = "김혜민";
+		st.kor = 43;
+		st.mat = 71;
+		st.eng = 55;
+		st.sum = st.kor + st.mat + st.eng;
+		st.avg = (double)st.sum/3;
+		
+		st.score(st);
+		
+		
+	}
+}

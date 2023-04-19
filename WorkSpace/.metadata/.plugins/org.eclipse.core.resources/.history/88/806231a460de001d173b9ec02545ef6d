@@ -1,0 +1,8 @@
+package pack04_OOP2;
+
+public class StudentDTO {
+	int num, kor, mat, eng, sum = 0;
+	String name;
+	double avg;
+
+}

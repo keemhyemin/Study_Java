@@ -1,0 +1,19 @@
+package pack04_OOP2;
+
+public class StudentMain {
+	public static void main(String[] args) {
+		StudentDTO dto = new StudentDTO();
+		dto.num = 1;
+		dto.name = "김혜민";
+		dto.kor = 43;
+		dto.mat = 74;
+		dto.eng = 57;
+		dto.sum = dto.kor + dto.mat + dto.eng;
+		dto.avg = (double)dto.sum/3;
+		
+		StudentDAO dao = new StudentDAO();
+		dao.display(dto);
+		
+		
+	}
+}

@@ -1,0 +1,19 @@
+package pack04_OOP2;
+
+// Student Class: 학생의 성적정보를 관리할 수 있게 만든 설계도
+public class Student {
+	int num, kor, mat, eng, sum = 0;
+	String name;
+	double avg;
+	
+	void display(Student st) {
+		System.out.println("번호: " + st.num + "번");
+		System.out.println("이름: " + st.name);
+		System.out.println("국어: " + st.kor + "점");
+		System.out.println("수학: " + st.mat + "점");
+		System.out.println("영어: " + st.eng + "점");
+		System.out.println("총점: " + st.sum + "점");
+		System.out.println("평균: " + st.avg + "점");
+		
+	}
+}
