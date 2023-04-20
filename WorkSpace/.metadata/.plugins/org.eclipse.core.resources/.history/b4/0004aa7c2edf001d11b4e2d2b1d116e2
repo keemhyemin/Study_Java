@@ -1,0 +1,11 @@
+
+public class JapangiDAO {
+	 
+	 public void display(JapangiDTO[] dtoArr) {
+		 
+		 for (int i=0; i<dtoArr.length; i++) {
+			 System.out.println(dtoArr[i].getNum() + ". " + dtoArr[i].getItem() + " " + "금액: " + dtoArr[i].getPrice() + " " + "수량: " + dtoArr[i].getCnt());
+		 }
+	 }
+
+}

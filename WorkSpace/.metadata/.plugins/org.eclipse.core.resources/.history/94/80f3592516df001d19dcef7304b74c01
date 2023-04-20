@@ -1,0 +1,14 @@
+package pack06_OOP3;
+
+import pack03_OOP1.Product;
+
+public class ProductMain {
+	public static void main(String[] args) {
+		
+		ProductDTO dto = new ProductDTO(1, "컴퓨터", 10000, 5);
+		// System.out.println(dto.cnt); <- private 접근제한자로 변수의 바로 접근을 막아놓음
+		System.out.println(dto.getNum());
+		
+	}
+
+}

@@ -1,0 +1,11 @@
+
+public class JapangiMain {
+	public static void main(String[] args) {
+		
+		JapangiDTO dto1 = new JapangiDTO("콜라", 800, 8);
+		JapangiDTO dto2 = new JapangiDTO("사이다", 1000	,5);
+		JapangiDTO dto3 = new JapangiDTO("환타", 900, 1);
+		
+		
+	}
+}

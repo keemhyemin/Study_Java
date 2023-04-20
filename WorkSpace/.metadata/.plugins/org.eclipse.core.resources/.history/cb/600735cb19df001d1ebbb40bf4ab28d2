@@ -1,0 +1,19 @@
+package pack06_OOP3;
+
+public class ProductMain {
+	public static void main(String[] args) {
+		
+		ProductDTO dto1 = new ProductDTO(1, "컴퓨터", 10000, 5);
+		// System.out.println(dto.cnt); <- private 접근제한자로 변수의 바로 접근을 막아놓음
+		// System.out.println(dto.getNum());
+		// 매번 dto의 내용을 하나씩 getter로 불러오는게 아니라 display()라는 메소드를 구현하고
+		// 해당하는 메소드 호출시 dto의 내용을 바로 보여줘라
+		// 번호: 1, 이름: 컴퓨터, 가격: 10000, 수량: 5
+		ProductDTO dto2 = new ProductDTO(2, "노트북", 20000, 4);
+		ProductDAO dao = new ProductDAO();
+		dao.display(dto1);
+		dao.display(dto2);
+		
+	}
+
+}

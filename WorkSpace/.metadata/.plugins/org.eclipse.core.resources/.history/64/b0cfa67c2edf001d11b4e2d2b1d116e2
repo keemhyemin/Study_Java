@@ -1,0 +1,50 @@
+
+public class JapangiDTO {
+	private int num;
+	private String item;
+	private int price, cnt;
+	int money;
+	String id, pw;
+
+	public JapangiDTO(int num, String item, int price, int cnt) {
+
+		this.num = num;
+		this.item = item;
+		this.price = price;
+		this.cnt = cnt;
+	}
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+
+	public String getItem() {
+		return item;
+	}
+
+	public void setItem(String item) {
+		this.item = item;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public int getCnt() {
+		return cnt;
+	}
+
+	public void setCnt(int cnt) {
+		this.cnt = cnt;
+	}
+	
+
+}

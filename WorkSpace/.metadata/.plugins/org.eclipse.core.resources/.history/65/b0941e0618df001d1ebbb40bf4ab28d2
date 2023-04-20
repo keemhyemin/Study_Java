@@ -1,0 +1,12 @@
+package pack06_OOP3;
+
+public class ProductDAO {
+	void display(ProductDTO dtod) {
+		System.out.print("번호: " + dtod.getNum() + " ");
+		System.out.print("이름: " + dtod.getName() + " ");
+		System.out.print("가격: " + dtod.getPrice() + " ");
+		System.out.println("수량: " + dtod.getCnt());
+
+	}
+
+}

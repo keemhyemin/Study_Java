@@ -29,7 +29,16 @@
     <fullyQualifiedTypeName name="pack01_Base.Ex07_OverLoading"/>
     <fullyQualifiedTypeName name="pack02_Static.Ex01_Static"/>
     <fullyQualifiedTypeName name="pack02_Static.Ex02_Caculator"/>
-    <fullyQualifiedTypeName name="pack02_Static.Test01_Method"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="pack02_Static.Test01_MethodMain"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="pack02_Static.Test01_Method"/>
+    <fullyQualifiedTypeName name="pack03_OOP1.ProductDTO"/>
+    <fullyQualifiedTypeName name="pack03_OOP1.ProductMain"/>
+    <fullyQualifiedTypeName name="pack04_OOP2.Student"/>
+    <fullyQualifiedTypeName name="pack04_OOP2.StudentDAO"/>
+    <fullyQualifiedTypeName name="pack04_OOP2.StudentDTO"/>
+    <fullyQualifiedTypeName name="pack03_OOP1.Product"/>
+    <fullyQualifiedTypeName name="pack06_OOP3.ProductDAO"/>
+    <fullyQualifiedTypeName name="pack06_OOP3.ProductDTO"/>
+    <fullyQualifiedTypeName name="pack06_OOP3.ProductMain"/>
 </qualifiedTypeNameHistroy>

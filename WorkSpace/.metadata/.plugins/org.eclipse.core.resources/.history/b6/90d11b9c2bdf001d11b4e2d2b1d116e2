@@ -1,0 +1,7 @@
+
+public class JapangiDAO {
+	 void display(JapangiDTO dto) {
+		 System.out.println(dto.getNum() + ". " + dto.getItem() + " " + "금액: " + dto.getPrice() + " " + "수량: " + dto.getCnt());
+	 }
+
+}

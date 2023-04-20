@@ -1,0 +1,15 @@
+
+public class JapangiMasterDAO {
+	
+	public void login(String id, String pw) {
+		System.out.println("관리자 모드가 실행되었습니다.");
+		System.out.println("아이디와 비밀번호를 입력해주세요.");
+		System.out.println("아이디: ");
+		System.out.println("비밀번호: ");
+		if(id.equals("master") && pw.equals("admin")) {
+			// 음료 목록 보여주고
+			// 음료 추가, 수정, 삭제 메소드
+		}
+	}
+	
+}

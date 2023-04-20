@@ -1,0 +1,7 @@
+
+public class JapangiDTO {
+	String item;
+	int price, cnt, money;
+	
+
+}

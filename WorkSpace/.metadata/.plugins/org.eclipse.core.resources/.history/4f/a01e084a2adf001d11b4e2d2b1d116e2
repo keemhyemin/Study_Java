@@ -1,0 +1,7 @@
+
+public class JapangiUserDAO {
+	 void display(JapangiDTO dto) {
+		 
+	 }
+
+}
