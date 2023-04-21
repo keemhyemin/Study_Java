@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class JapangiDAO {
+
+	public void display(JapangiDTO[] dtoArr) {
+		for (int i = 0; i < dtoArr.length; i++) {
+			System.out.println(dtoArr[i].getNum() + ". " + dtoArr[i].getDrink() + " " + "금액: " + dtoArr[i].getPrice()
+					+ " " + "수량: " + dtoArr[i].getCnt());
+		}
+	}
+
+	public int inputCoin(JapangiDTO dto) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("돈을 넣어주세요.");
+		while (true) {
+			try {
+				dto.setUserMoney(Integer.parseInt(sc.nextLine()));
+				if (dto.getUserMoney() < 0 || dto.getUserMoney() % 10 != 0) {
+					System.out.println("돈을 다시 넣어주세요.");
+				} else {
+					System.out.println(dto.getUserMoney() + "원을 넣었습니다.");
+					break;
+				}
+			} catch (Exception e) {
+				System.out.println("입력 오류, 돈을 넣어주세요.");
+			}
+		}
+		return dto.getUserMoney();
+	}
+
+	public void selectDrink(JapangiDTO dto) {
+		if (dto.getUserMoney() == 0 || dto.getCnt() == 0) {
+			System.out.println("음료수를 뽑을 수 없습니다.");
+		} else {
+			System.out.println("음료수를 골라주세요.");
+		}
+	}
+
+}

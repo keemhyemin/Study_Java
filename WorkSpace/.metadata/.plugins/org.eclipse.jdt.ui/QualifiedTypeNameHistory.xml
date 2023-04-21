@@ -2,7 +2,6 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.security.DomainCombiner"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
     <fullyQualifiedTypeName name="java.io.File"/>
@@ -30,7 +29,6 @@
     <fullyQualifiedTypeName name="pack02_Static.Ex01_Static"/>
     <fullyQualifiedTypeName name="pack02_Static.Ex02_Caculator"/>
     <fullyQualifiedTypeName name="pack02_Static.Test01_MethodMain"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="pack02_Static.Test01_Method"/>
     <fullyQualifiedTypeName name="pack03_OOP1.ProductDTO"/>
     <fullyQualifiedTypeName name="pack03_OOP1.ProductMain"/>
@@ -41,4 +39,8 @@
     <fullyQualifiedTypeName name="pack06_OOP3.ProductDAO"/>
     <fullyQualifiedTypeName name="pack06_OOP3.ProductDTO"/>
     <fullyQualifiedTypeName name="pack06_OOP3.ProductMain"/>
+    <fullyQualifiedTypeName name="JapangiDAO"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="JapangiDTO"/>
 </qualifiedTypeNameHistroy>
