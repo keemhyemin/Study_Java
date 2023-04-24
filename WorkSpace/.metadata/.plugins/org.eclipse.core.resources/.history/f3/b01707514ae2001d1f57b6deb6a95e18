@@ -1,0 +1,21 @@
+package test01_oop1;
+
+import java.util.Scanner;
+
+public class AdminDAO {
+	public void adminLogin() {
+		// 특정 횟수만큼 아이디와 비밀번호를 입력하게 유도할 수 있음
+		Scanner sc = new Scanner(System.in);
+		while (true) {
+			String id = sc.nextLine();
+			String pw = sc.nextLine();
+			if (id.equals("master") && pw.equals("admin")) {
+				System.out.println("로그인 되었습니다.");
+				System.out.println("1.음료추가 2.음료수정 3.음료삭제");
+			} else {
+				System.out.println("아이디 또는 패스워드를 확인해주세요.");
+			}
+		}
+
+	}
+}

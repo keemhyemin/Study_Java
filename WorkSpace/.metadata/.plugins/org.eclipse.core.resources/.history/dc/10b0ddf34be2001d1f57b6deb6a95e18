@@ -1,0 +1,40 @@
+package test01_oop1;
+
+import java.util.Scanner;
+
+public class JapangiMain {
+	public static void main(String[] args) {
+		// 반복을 계속하다가 별도의 키를 입력받아 종료
+		JapangiDAO dao = new JapangiDAO();
+		// JapangiDTO[] drinkArr = dao.initDrinks(); // 음료 3개가 있는 배열을 return 받음
+
+		Scanner sc = new Scanner(System.in);
+		while (true) {
+			
+			System.out.println("0.관리자모드, 1.음료주문, -1.종료");
+			int inputMenu = dao.inputInt();
+			if(inputMenu == 0) {
+				System.out.println("관리자모드를 실행합니다.");
+				System.out.println("보안 규칙에 따라 관리자 로그인을 해주세요.");
+				AdminDAO adminDAO = new AdminDAO();
+				adminDAO.adminLogin();
+			}
+			else if (inputMenu == 1) {
+				dao.display();
+				System.out.println("돈을 넣어주세요.");
+				int money = dao.inputMoney();
+				System.out.println("금액 입력 됨: " + money);
+				while (money != 1) {
+					System.out.println("음료 번호를 입력해주세요.");
+					int choice = dao.choiceMenu();
+					System.out.println(choice + "번 선택완료");
+					money = dao.orderMenu(choice, money);
+				}
+			} else if (inputMenu == -1) {
+				System.out.println("종료되었습니다.");
+				break;
+			}
+		}
+	}
+
+}

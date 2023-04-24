@@ -1,0 +1,22 @@
+package test01_oop1;
+
+import java.util.Scanner;
+
+public class JapangiMain {
+	public static void main(String[] args) {
+		// 반복을 계속하다가 별도의 키를 입력받아 종료
+		// JapangiDTO dto = ; // null, 0, 0 <- 초기값만 있음
+		JapangiDAO dao = new JapangiDAO();
+		JapangiDTO[] drinkArr = dao.initDrinks(); // 음료 3개가 있는 배열을 return 받음
+		
+		Scanner sc = new Scanner(System.in);
+		while (true) {
+			dao.display(drinkArr);
+			String inputData = sc.nextLine();
+			if (inputData.equals("exit")) {
+				System.out.println("종료되었습니다.");
+				break;
+			}
+		}
+	}
+}

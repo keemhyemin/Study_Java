@@ -5,10 +5,9 @@ public class JapangiDTO {
 	private int price, cnt;
 	private int userMoney, inputMoney;
 	private String id, pw;
-	
-	
+
 	public JapangiDTO() {
-		
+
 	}
 
 	public JapangiDTO(int num, String drink, int price, int cnt) {
@@ -58,7 +57,7 @@ public class JapangiDTO {
 	public void setUserMoney(int userMoney) {
 		this.userMoney = userMoney;
 	}
-	
+
 	public int getInputMoney() {
 		return inputMoney;
 	}
@@ -83,6 +82,5 @@ public class JapangiDTO {
 	public void setPw(String pw) {
 		this.pw = pw;
 	}
-	
 
 }

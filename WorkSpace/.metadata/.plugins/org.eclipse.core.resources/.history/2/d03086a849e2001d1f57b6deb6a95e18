@@ -1,0 +1,29 @@
+package test01_oop1;
+
+import java.util.Scanner;
+
+public class JapangiMain {
+	public static void main(String[] args) {
+		// 반복을 계속하다가 별도의 키를 입력받아 종료
+		JapangiDAO dao = new JapangiDAO();
+		JapangiDTO[] drinkArr = dao.initDrinks(); // 음료 3개가 있는 배열을 return 받음
+
+		Scanner sc = new Scanner(System.in);
+		while (true) {
+			dao.display(drinkArr);
+			System.out.println("1.음료주문, -1.종료");
+			int inputMenu = dao.inputInt();
+			if (inputMenu == 1) {
+				System.out.println("돈을 넣어주세요.");
+				int money = dao.inputMoney();
+				System.out.println("금액 입력 됨: " + money);
+				System.out.println("음료 번호를 입력해주세요.");
+				int choice = dao.choiceMenu(drinkArr);
+				System.out.println(choice + "번 선택완료");
+			} else if (inputMenu == -1) {
+				System.out.println("종료되었습니다.");
+				break;
+			}
+		}
+	}
+}
