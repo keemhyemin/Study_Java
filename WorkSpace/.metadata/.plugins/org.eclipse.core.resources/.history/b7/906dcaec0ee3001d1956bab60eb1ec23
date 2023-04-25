@@ -1,0 +1,47 @@
+package pack04.extend;
+
+import java.util.Scanner;
+
+public class CellPhone {
+	// 1세대 폰: 전원을 켜고 끄는 기능, 통화 기능이 있는 휴대폰
+	String model;
+	String color;
+
+	public void powerOn() {
+		System.out.println("전원을 켭니다.");
+	}
+
+	public void powerOff() {
+		System.out.println("전원을 끕니다.");
+	}
+
+	public void bell() {
+		System.out.println("벨이 울립니다.");
+	}
+
+	public void sendVoice() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("나: ");
+		System.out.print(sc.next());
+	}
+
+	public void receiveVoice() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("상대방: ");
+		System.out.print(sc.next());
+	}
+
+	public void hangUp() {
+		System.out.println("전화를 끊습니다.");
+	}
+	public static void main(String[] args) {
+		CellPhone cp = new CellPhone();
+		cp.powerOn();
+		cp.bell();
+		cp.sendVoice();
+		cp.receiveVoice();
+		cp.hangUp();
+		cp.powerOff();
+	}
+
+}

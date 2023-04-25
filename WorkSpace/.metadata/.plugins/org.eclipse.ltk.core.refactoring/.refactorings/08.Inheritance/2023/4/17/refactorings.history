@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;pack02.extend&apos; to &apos;08.Inheritance/src/pack02.extend&apos;&#x0D;&#x0A;- Original project: &apos;08.Inheritance&apos;&#x0D;&#x0A;- Destination element: &apos;08.Inheritance/src/pack02.extend&apos;&#x0D;&#x0A;- Original element: &apos;08.Inheritance/src/pack02.extend&apos;" description="Copy package" destination="/src&lt;pack02.extend" element1="/src&lt;pack02.extend" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1682387750686" version="1.0"/>
+</session>

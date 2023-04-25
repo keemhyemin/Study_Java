@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.security.DomainCombiner"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
@@ -44,6 +43,21 @@
     <fullyQualifiedTypeName name="JapangiDTO"/>
     <fullyQualifiedTypeName name="test01_oop1.AdminDAO"/>
     <fullyQualifiedTypeName name="test01_oop1.JapangiDAO"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="test01_oop1.JapangiDTO"/>
+    <fullyQualifiedTypeName name="pack01.hankook.Tire"/>
+    <fullyQualifiedTypeName name="pack02.kumho.Tire"/>
+    <fullyQualifiedTypeName name="pack.a.B"/>
+    <fullyQualifiedTypeName name="pack.a.A"/>
+    <fullyQualifiedTypeName name="pack.b.C"/>
+    <fullyQualifiedTypeName name="pack01.extend.ChildClass"/>
+    <fullyQualifiedTypeName name="pack01.extend.ParentClass"/>
+    <fullyQualifiedTypeName name="pack02.extend.SuperClass"/>
+    <fullyQualifiedTypeName name="pack02.extend.SubClass"/>
+    <fullyQualifiedTypeName name="pack03.extend.SubClass"/>
+    <fullyQualifiedTypeName name="java.lang.Deprecated"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="pack04.extend.CellPhone"/>
+    <fullyQualifiedTypeName name="pack04.extend.SmartPhone"/>
+    <fullyQualifiedTypeName name="pack04.extend.DmbPhone"/>
+    <fullyQualifiedTypeName name="pack05.abstrac.Animal"/>
 </qualifiedTypeNameHistroy>

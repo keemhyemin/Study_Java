@@ -1,0 +1,14 @@
+package pack04.extend;
+
+public class SmartPhone extends DmbPhone {
+	public SmartPhone(int channel, String color, String model) {
+		super(channel, color, model);
+	}
+
+	String internet;
+
+	void internet() {
+		System.out.println("인터넷");
+	}
+
+}

@@ -1,0 +1,9 @@
+package pack04.extend;
+
+public class ExamMain {
+	public static void main(String[] args) {
+		DmbPhone dmbP = new DmbPhone(1, "검정", "삼성");
+		dmbP.powerOn();
+		dmbP.bell();
+	}
+}

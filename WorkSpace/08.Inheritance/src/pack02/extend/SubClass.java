@@ -1,0 +1,16 @@
+package pack02.extend;
+
+public class SubClass extends SuperClass {
+	public int mul(int x, int y) {
+		return x * y;
+	}
+
+	public int div(int x, int y) {
+		return x / y;
+	}
+
+	public int div_re(int x, int y) {
+		return x % y;
+	}
+
+}

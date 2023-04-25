@@ -1,0 +1,15 @@
+package pack04.extend;
+
+public class SmartPhone extends DmbPhone {
+	int internet;
+	
+	public SmartPhone(int channel, String color, String model, int internet) {
+		super(channel, color, model); // 부모 클래스가 별도의 생성자 메소드를 가지고 있다면
+		this.internet = internet;	   // 해당하는 부모 클래스가 인스턴스화 되어야지만, 자식 객체도 생성이 가능하다.
+	}
+
+	void internet() {
+		System.out.println(11);
+	}
+
+}
