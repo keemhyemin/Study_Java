@@ -41,6 +41,9 @@
     <fullyQualifiedTypeName name="pack06_OOP3.ProductMain"/>
     <fullyQualifiedTypeName name="JapangiDAO"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="JapangiDTO"/>
+    <fullyQualifiedTypeName name="test01_oop1.AdminDAO"/>
+    <fullyQualifiedTypeName name="test01_oop1.JapangiDAO"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="test01_oop1.JapangiDTO"/>
 </qualifiedTypeNameHistroy>
