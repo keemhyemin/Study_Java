@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move 3 elements to &apos;998.Project/src/pack01.Japangi&apos;&#x0D;&#x0A;- Original project: &apos;998.Japangi&apos;&#x0D;&#x0A;- Destination element: &apos;998.Project/src/pack01.Japangi&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     JapangiMain.java&#x0D;&#x0A;     JapangiDAO.java&#x0D;&#x0A;     JapangiDTO.java&#x0D;&#x0A;- Update references to refactored element" description="Move compilation units" destination="=998.Project/src&lt;pack01.Japangi" element1="/src&lt;{JapangiMain.java" element2="/src&lt;{JapangiDAO.java" element3="/src&lt;{JapangiDTO.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1682585019921" units="3" version="1.0"/>
+</session>

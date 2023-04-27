@@ -1,0 +1,6 @@
+package pack02.Phone;
+
+
+public class Phone2Main {
+
+}

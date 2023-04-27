@@ -1,0 +1,18 @@
+
+
+public class Phone1Main {
+	public static void main(String[] args) {
+		Phone1DAO dao = new Phone1DAO();
+		Phone1DTO p1dto = new Phone1DTO("검정", "애플", "켜짐");
+
+		System.out.println("색상:" + p1dto.getColor());
+		System.out.println("모델명:" + p1dto.getModel());
+		System.out.println("상태:" + p1dto.getState());
+
+		System.out.println();
+		dao.turnOn(p1dto);
+		dao.turnOff(p1dto);
+		dao.call(p1dto);
+
+	}
+}
