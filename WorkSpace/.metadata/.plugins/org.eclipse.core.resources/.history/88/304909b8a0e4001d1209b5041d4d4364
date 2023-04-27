@@ -1,0 +1,7 @@
+package pack04.db;
+
+public class HtmlMain {
+	public static void main(String[] args) {
+		
+	}
+}

@@ -1,0 +1,12 @@
+package pack02.inter;
+
+public class RemoteMain {
+	public static void main(String[] args) {
+		// RemoteControl == 인터페이스(방법만 써놓은것)
+		// Audio ↑ 방법을 상속받아 실제 메소드를 구현해놓은곳
+		Audio audio = new Audio();
+		audio.turnOn();
+		audio.turnOff();
+		audio.setVolume(5);
+	}
+}

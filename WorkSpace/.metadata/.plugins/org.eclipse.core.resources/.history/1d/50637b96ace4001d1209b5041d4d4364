@@ -1,0 +1,38 @@
+package pack01.phone1;
+
+public class Phone1DTO {
+	private String color;
+	private String model;
+	private boolean powerState;
+	private boolean callState;
+
+	public Phone1DTO(String color, String model, boolean powerState) {
+		this.color = color;
+		this.model = model;
+		this.powerState = powerState;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+	public boolean isPowerState() {
+		return powerState;
+	}
+
+	public void isPowerState(boolean powerState) {
+		this.powerState = powerState;
+	}
+}
