@@ -38,6 +38,12 @@ public class Phone1DAO {
 	public String hangUp(Phone1DTO dto) { // 전화 끊기
 		System.out.println("전화를 끊습니다.");
 		dto.setCallState("대기중");
-		return dto.getCallState();
+		System.out.println("전원을 끄시겠습니까?");
+		System.out.println("전원을 끄시려면 1번을 눌러주세요.");
+		int inputMenu = inputInt();
+		if (inputMenu == 1) {
+			powerOff(dto);
+		}
+		return dto.getState();
 	}
 }

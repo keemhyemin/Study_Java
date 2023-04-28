@@ -1,15 +1,12 @@
 package pack02.Phone;
 
-
 public class Phone1DTO {
 	private String color;
 	private String model;
 	private String state;
 	private String callState;
 
-	
-
-	public Phone1DTO(String color, String model, String state , String callState) {
+	public Phone1DTO(String color, String model, String state, String callState) {
 		this.color = color;
 		this.model = model;
 		this.state = state;
@@ -48,5 +45,4 @@ public class Phone1DTO {
 		this.callState = callState;
 	}
 
-	
 }

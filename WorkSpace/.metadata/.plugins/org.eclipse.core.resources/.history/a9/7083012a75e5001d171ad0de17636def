@@ -1,0 +1,13 @@
+package pack02.Phone;
+
+
+public class Phone2DTO extends Phone1DTO {
+
+	public Phone2DTO(String color, String model, String state, String callState) {
+		super(color, model, state, callState);
+		
+	}
+	private String dmbState;
+	private int channel;
+
+}

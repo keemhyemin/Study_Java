@@ -1,0 +1,18 @@
+package pack02.Phone;
+
+public class Phone2Main {
+	public static void main(String[] args) {
+		Phone2DTO p2dto = new Phone2DTO("검정", "이니셜-2", "꺼짐", "대기중", "정보없음");
+		Phone2DAO p2dao = new Phone2DAO();
+		
+		System.out.println("전원이 꺼져있어 DMB 방송을 켤 수가 없습니다.");
+		System.out.println("전원을 켜시겠습니까? (그 외에는 꺼짐)");
+		int inputMenu = p2dao.inputInt();
+		if(inputMenu == 1) {
+			p2dao.powerOn(p2dto);
+		}else {
+			p2dao.powerOff(p2dto);
+		}
+	}
+
+}

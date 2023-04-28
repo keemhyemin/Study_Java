@@ -25,7 +25,7 @@ public class Phone2Main {
 			if (inputMenu == 1) {
 				p2dao.dmbOn(p2dto);
 			} else {
-				p2dao.dmbOff(p2dto);
+
 			}
 		}
 

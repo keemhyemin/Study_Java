@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.Random"/>
-    <fullyQualifiedTypeName name="pack02_Field.Ex03_Object"/>
-    <fullyQualifiedTypeName name="pack03_Constructor.Ex01_Cons"/>
-    <fullyQualifiedTypeName name="pack03_Constructor.Ex02_Korean"/>
-    <fullyQualifiedTypeName name="pack03_Constructor.Ex03_Car"/>
-    <fullyQualifiedTypeName name="pack03_Constructor.Test01_Member"/>
-    <fullyQualifiedTypeName name="pack03_Constructor.Test02_Phone"/>
-    <fullyQualifiedTypeName name="pack01_Base.Ex01_Car"/>
-    <fullyQualifiedTypeName name="pack01_Base.Ex02_Caculator"/>
-    <fullyQualifiedTypeName name="pack01_Base.Ex03_Computer"/>
-    <fullyQualifiedTypeName name="pack01_Base.Ex04_Car"/>
-    <fullyQualifiedTypeName name="pack01_Base.Const"/>
-    <fullyQualifiedTypeName name="pack01_Base.Ex06_Method"/>
     <fullyQualifiedTypeName name="pack01_Base.Ex07_OverLoading"/>
     <fullyQualifiedTypeName name="pack02_Static.Ex01_Static"/>
     <fullyQualifiedTypeName name="pack02_Static.Ex02_Caculator"/>
@@ -60,4 +47,17 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="pack01.phone1.Phone1DAO"/>
     <fullyQualifiedTypeName name="pack01.phone1.Phone1DTO"/>
+    <fullyQualifiedTypeName name="java.util.prefs.BackingStoreException"/>
+    <fullyQualifiedTypeName name="pack01.nasted.A.B"/>
+    <fullyQualifiedTypeName name="pack01.nasted.A.C"/>
+    <fullyQualifiedTypeName name="java.awt.image.DataBufferByte"/>
+    <fullyQualifiedTypeName name="pack01.nasted.A"/>
+    <fullyQualifiedTypeName name="pack01.nasted.A.AA"/>
+    <fullyQualifiedTypeName name="pack01.nasted.A.AA.BB"/>
+    <fullyQualifiedTypeName name="pack01.nasted.A.AA.BB.CC"/>
+    <fullyQualifiedTypeName name="pack01.nasted.A.AA.BB.CC.DD"/>
+    <fullyQualifiedTypeName name="pack02.Phone.Phone1DAO"/>
+    <fullyQualifiedTypeName name="pack02.Phone.Phone1DTO"/>
+    <fullyQualifiedTypeName name="pack02.Phone.Phone2DAO"/>
+    <fullyQualifiedTypeName name="pack02.Phone.Phone2DTO"/>
 </qualifiedTypeNameHistroy>
