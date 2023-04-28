@@ -1,0 +1,63 @@
+package pack02.Phone;
+
+import java.util.Scanner;
+
+public class Phone1DAO {
+
+	Scanner sc = new Scanner(System.in);
+
+	public void powerOn(Phone1DTO dto) {
+		System.out.println(dto.getModel() + " 전원이 켜졌습니다.");
+		dto.setState("켜짐");
+	}
+
+	public void powerOff(Phone1DTO dto) {
+		System.out.println(dto.getModel() + " 전원이 꺼졌습니다.");
+		dto.setState("꺼짐");
+	}
+
+	public int inputInt() {
+		while (true) {
+			try {
+				int rtnInt = Integer.parseInt(sc.nextLine());
+				return rtnInt;
+			} catch (Exception e) {
+				System.out.println("숫자만 입력해주세요.");
+			}
+		}
+	}
+
+	public String callOn(Phone1DTO dto) {
+		if (dto.getState().equals("켜짐") && dto.getCallState().equals("대기중")) {
+			System.out.println("전화를 받으시겠습니까? 받으실거면 1번을 누르세요. (그 외에는 거절)");
+			int inputMenu = inputInt();
+			if (inputMenu == 1) {
+				System.out.println("전화가 와서 전화를 받았습니다.");
+				dto.setCallState("전화중");
+				System.out.println("나 : " + sc.nextLine());
+				System.out.println("상대방: " + sc.nextLine());
+				return dto.getCallState();
+			} else {
+				System.out.println("전화를 거절했습니다.");
+				System.out.println("통화중인 상태가 아닙니다. 음성 전송 & 수신이 불가합니다.");
+				return dto.getCallState();
+			}
+		} else if (dto.getState().equals("꺼짐") && dto.getCallState().equals("대기중")) {
+			System.out.println("전원이 꺼져있어 전화 받기가 불가합니다.");
+		}
+		return dto.getCallState();
+
+	}
+
+	public String callOff(Phone1DTO dto) {
+		if (dto.getState().equals("켜짐") && dto.getCallState().equals("전화중")) {
+			System.out.println("전화를 끊습니다.");
+			dto.setCallState("대기중");
+			return dto.getCallState();
+		} else if(dto.getState().equals("꺼짐") && dto.getCallState().equals("대기중")){
+			System.out.println("전원이 꺼져있어 전화끊기가 불가합니다.");
+			return dto.getCallState();
+		}
+		return dto.getCallState();
+	}
+}

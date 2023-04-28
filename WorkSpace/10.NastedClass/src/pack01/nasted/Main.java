@@ -1,0 +1,33 @@
+package pack01.nasted;
+
+import pack01.nasted.A.B;
+import pack01.nasted.A.C;
+
+public class Main {
+	// 클래스의 중괄호 사이에 있는 모든 것 ==> 멤버: 인스턴스 멤버 / 스태틱 멤버(static 여부)
+	// 전역 변수 : 클래스 내부에서 어디서든 사용 가능함.
+
+	// 외부 클래스에서 다른 클래스 멤버에 접근하는 방법
+	// 인스턴스 멤버(static X) : 인스턴스화 과정을 거쳐야만 접근(사용)
+	// 스태틱 멤버 (static O) : 해당하는 클래스에 . 만 찍어도 접근(사용)
+	public static void main(String[] args) {
+		// 인스턴스화 과정: 생성자 메소드를 이용하거나 값 할당 등을 하여 null이 아닌 참조가 되는
+		// 상태로 만드는 것
+		A a = new A(); // A 클래스의 중괄호 사이의 모든 것(접근 제한자 차이 제외)을 사용할 수 있
+		System.out.println(a.aField);
+		
+		B b = a.new B(); // A 클래스 안에 있는 멤버이기때문에 a.new B();로 인스턴스화 해준다.
+		System.out.println(b.bField);
+		b.methodB();
+
+		C c = new C(); // static이지만 안에 있는 멤버들은 인스턴스이기 때문에 인스턴스화 해준 뒤 호출
+		System.out.println(c.cField);
+		c.methodC();
+		
+		
+		a.methodD();
+		
+		System.out.println(a.methodA());
+		
+	}
+}

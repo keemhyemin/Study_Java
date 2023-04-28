@@ -1,0 +1,5 @@
+package pack01.nasted;
+
+public class A {
+	int aField = 10; // 인스턴스 멤버(인스턴스화를 시켜야 접근 가능하다)
+}
