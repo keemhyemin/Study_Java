@@ -1,0 +1,13 @@
+package pack02.Phone;
+
+public class Phone3Main {
+	public static void main(String[] args) {
+		Phone3DAO p3dao = new Phone3DAO();
+		Phone3DTO p3dto = new Phone3DTO("검정", "이니셜-3", "꺼짐", "대기중", "꺼짐", "정보없음");
+		
+		System.out.print("색상: " + p3dto.getColor() + ", ");
+		System.out.print("모델명: " + p3dto.getModel() + ", ");
+		System.out.print("상태: " + p3dto.getState() + ", ");
+		System.out.println("채널: " + p3dto.getChannelInfo());
+	}
+}

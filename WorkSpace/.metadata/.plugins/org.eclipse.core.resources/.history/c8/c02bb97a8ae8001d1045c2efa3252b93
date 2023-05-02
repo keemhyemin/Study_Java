@@ -1,0 +1,7 @@
+package pack01.thread;
+
+public class Ex05_Main {
+	public static void main(String[] args) {
+		
+	}
+}
