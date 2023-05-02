@@ -5,8 +5,8 @@ public class Phone1Main {
 		Phone1DAO p1dao = new Phone1DAO();
 		Phone1DTO p1dto = new Phone1DTO("검정", "이니셜-1", "꺼짐", "대기중");
 
-		System.out.print("색상: " + p1dto.getColor() +  " ");
-		System.out.print("모델명: " + p1dto.getModel() +  " ");
+		System.out.print("색상: " + p1dto.getColor() +  ", ");
+		System.out.print("모델명: " + p1dto.getModel() +  ", ");
 		System.out.println("상태: " + p1dto.getState());
 
 		System.out.println();
