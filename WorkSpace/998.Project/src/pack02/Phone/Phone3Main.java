@@ -70,7 +70,7 @@ public class Phone3Main {
 		}
 
 		if (p3dto.getState().equals("켜짐") && p3dto.getDmbState().equals("시청중")) {
-			System.out.println("DMB를 끄시겠습니까? 끄실거면 아무 숫자나 눌러주세요.");
+			System.out.println("DMB를 끄시겠습니까? 끄실거면 1을 눌러주세요.");
 			int inputMenu = p3dao.inputInt();
 			if (inputMenu == 1) {
 				p3dao.dmbOff(p3dto);
