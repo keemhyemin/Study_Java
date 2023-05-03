@@ -1,0 +1,31 @@
+package dao.dto.method;
+
+public class Overloading {
+	// 메소드의 이름이 같고, 타입과 파라메터의 개수를 다르게 해서 사용할 수 있게 한 것
+	
+	void method() {
+
+	}
+
+	void method(int x) {
+
+	}
+	
+	void method(int x, int y) {
+		
+	}
+
+	void method(String str) {
+
+	}
+	
+	void method(boolean bData) {
+		
+	}
+	
+	public static void main(String[] args) {
+		Overloading ol = new Overloading();
+	
+		
+	}
+}

@@ -1,0 +1,23 @@
+package dao.dto.method;
+
+public class Method {
+	public static void main(String[] args) {
+		Method mt = new Method();
+		mt.동생한테용돈(10000);
+	}
+
+	public void 동생한테용돈(int money) {
+		System.out.println(money + " 동생한테 용돈 줌, 알아서 쓰기 때문에 결과 필요없음.");
+	}
+
+	public void 라면심부름() {
+		System.out.println("동생한테 라면 심부름 시킴.");
+		System.out.println("내 위치는 메인메소드");
+	}
+
+	// void: 현실에서 어떤 지시를 했을 때 그 결과가 필요없는 경우 :
+	// 동생한테 용돈을 준 경우, 기부, 볼 일을 보고 물을 내린 경우
+
+	// return: 현실에서 어떤 지시를 했을 때 그 결과가 필요한 경우 :
+	// 동생한테 라면 심부름 시켰을 때 가져옴(빵, 담배 등)
+}

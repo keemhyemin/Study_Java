@@ -1,22 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="pack01_Base.Ex07_OverLoading"/>
-    <fullyQualifiedTypeName name="pack02_Static.Ex01_Static"/>
-    <fullyQualifiedTypeName name="pack02_Static.Ex02_Caculator"/>
-    <fullyQualifiedTypeName name="pack02_Static.Test01_MethodMain"/>
-    <fullyQualifiedTypeName name="pack02_Static.Test01_Method"/>
-    <fullyQualifiedTypeName name="pack03_OOP1.ProductDTO"/>
-    <fullyQualifiedTypeName name="pack03_OOP1.ProductMain"/>
-    <fullyQualifiedTypeName name="pack04_OOP2.Student"/>
-    <fullyQualifiedTypeName name="pack04_OOP2.StudentDAO"/>
-    <fullyQualifiedTypeName name="pack04_OOP2.StudentDTO"/>
-    <fullyQualifiedTypeName name="pack03_OOP1.Product"/>
-    <fullyQualifiedTypeName name="pack06_OOP3.ProductDAO"/>
-    <fullyQualifiedTypeName name="pack06_OOP3.ProductDTO"/>
-    <fullyQualifiedTypeName name="pack06_OOP3.ProductMain"/>
-    <fullyQualifiedTypeName name="JapangiDAO"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="JapangiDTO"/>
     <fullyQualifiedTypeName name="test01_oop1.AdminDAO"/>
     <fullyQualifiedTypeName name="test01_oop1.JapangiDAO"/>
     <fullyQualifiedTypeName name="test01_oop1.JapangiDTO"/>
@@ -44,7 +27,6 @@
     <fullyQualifiedTypeName name="pack04.db.DataAccessObject"/>
     <fullyQualifiedTypeName name="pack04.db.MysqlDAO"/>
     <fullyQualifiedTypeName name="pack04.db.OracleDAO"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="pack01.phone1.Phone1DAO"/>
     <fullyQualifiedTypeName name="pack01.phone1.Phone1DTO"/>
     <fullyQualifiedTypeName name="java.util.prefs.BackingStoreException"/>
@@ -60,4 +42,22 @@
     <fullyQualifiedTypeName name="pack02.Phone.Phone1DTO"/>
     <fullyQualifiedTypeName name="pack02.Phone.Phone2DAO"/>
     <fullyQualifiedTypeName name="pack02.Phone.Phone2DTO"/>
+    <fullyQualifiedTypeName name="pack02.Phone.Phone3Main"/>
+    <fullyQualifiedTypeName name="pack02.Phone.Phone3DAO"/>
+    <fullyQualifiedTypeName name="pack02.Phone.Phone3DTO"/>
+    <fullyQualifiedTypeName name="java.awt.Toolkit"/>
+    <fullyQualifiedTypeName name="pack01.thread.Ex02_BeepTask"/>
+    <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="pack01.thread.Ex04_BeepThread"/>
+    <fullyQualifiedTypeName name="pack01.thread.Ex05_ThreadB"/>
+    <fullyQualifiedTypeName name="pack01.thread.Ex05_ThreadA"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="pack01.thread.Ex06_YoutubeThread"/>
+    <fullyQualifiedTypeName name="pack01.thread.Ex06_MelonThread"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="java.util.Random"/>
+    <fullyQualifiedTypeName name="pack02.horsegame.Player"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="pack02.horsegame.PlayMain"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
 </qualifiedTypeNameHistroy>

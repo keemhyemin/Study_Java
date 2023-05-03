@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class GetterSetterMain {
+	public static void main(String[] args) {
+		GetterSetter gs = new GetterSetter();
+		Scanner sc = new Scanner(System.in);
+		int num = Integer.parseInt(sc.nextLine());
+
+	}
+
+}
