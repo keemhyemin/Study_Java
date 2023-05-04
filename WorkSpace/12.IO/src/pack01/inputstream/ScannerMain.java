@@ -1,0 +1,16 @@
+package pack01.inputstream;
+
+import java.io.InputStream;
+import java.util.Scanner;
+
+public class ScannerMain {
+	public static void main(String[] args) {
+		// KhmScanner 생성 문자열 입력 받아 출력해보기
+		KhmScanner ks = new KhmScanner(System.in);
+		
+		String inputData = ks.nextLine();
+		System.out.println(inputData);
+		int inputInt = ks.nextInt();
+		System.out.println(inputInt);
+	}
+}

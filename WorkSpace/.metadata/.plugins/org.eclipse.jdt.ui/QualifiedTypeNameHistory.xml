@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="test01_oop1.AdminDAO"/>
-    <fullyQualifiedTypeName name="test01_oop1.JapangiDAO"/>
-    <fullyQualifiedTypeName name="test01_oop1.JapangiDTO"/>
-    <fullyQualifiedTypeName name="pack01.hankook.Tire"/>
-    <fullyQualifiedTypeName name="pack02.kumho.Tire"/>
-    <fullyQualifiedTypeName name="pack.a.B"/>
-    <fullyQualifiedTypeName name="pack.a.A"/>
-    <fullyQualifiedTypeName name="pack.b.C"/>
-    <fullyQualifiedTypeName name="pack01.extend.ChildClass"/>
-    <fullyQualifiedTypeName name="pack01.extend.ParentClass"/>
-    <fullyQualifiedTypeName name="pack02.extend.SuperClass"/>
-    <fullyQualifiedTypeName name="pack02.extend.SubClass"/>
-    <fullyQualifiedTypeName name="pack03.extend.SubClass"/>
     <fullyQualifiedTypeName name="java.lang.Deprecated"/>
     <fullyQualifiedTypeName name="pack04.extend.CellPhone"/>
     <fullyQualifiedTypeName name="pack04.extend.SmartPhone"/>
@@ -57,7 +44,20 @@
     <fullyQualifiedTypeName name="java.lang.Runnable"/>
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="pack02.horsegame.Player"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="pack02.horsegame.PlayMain"/>
     <fullyQualifiedTypeName name="java.io.InputStream"/>
+    <fullyQualifiedTypeName name="Member"/>
+    <fullyQualifiedTypeName name="Human"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="GetterSetter"/>
+    <fullyQualifiedTypeName name="dao.dto.method.Human"/>
+    <fullyQualifiedTypeName name="dao.dto.method.HumanDAO"/>
+    <fullyQualifiedTypeName name="dao.dto.method.Method"/>
+    <fullyQualifiedTypeName name="dao.dto.method.MethodTest"/>
+    <fullyQualifiedTypeName name="dao.dto.method.Overloading"/>
+    <fullyQualifiedTypeName name="extend.imp.SuperParent"/>
+    <fullyQualifiedTypeName name="extend.imp.ChildClass"/>
+    <fullyQualifiedTypeName name="extend.imp.TestInterface"/>
+    <fullyQualifiedTypeName name="poly.김혜민"/>
+    <fullyQualifiedTypeName name="poly.전지현"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,19 @@
+package pack03.file;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
+
+public class Ex02_Text {
+	public static void main(String[] args) {
+		// 읽어오기(텍스트 파일을 읽어오기)
+		try {
+			Reader reader = new FileReader("C:\\Users\\admin\\Documents\\Ex02_Text.txt");
+			reader.close();
+		} catch (IOException e) {
+			// 파일이 없는 경우에 캐치로 빠짐.
+			e.printStackTrace();
+		}
+	}
+}
