@@ -1,0 +1,28 @@
+package pack02.Phone;
+
+public class Phone3DAO extends Phone2DAO {
+
+	public String internetOn(Phone3DTO dto) {
+		System.out.print("인터넷을 켭니다.");
+		dto.setInternetState("켜짐");
+		return dto.getDmbState();
+	}
+
+	public String internetOff(Phone3DTO dto) {
+		System.out.print("인터넷을 끕니다.");
+		dto.setInternetState("꺼짐");
+		return dto.getDmbState();
+	}
+
+	public String wtAppOn(Phone3DTO dto) {
+		System.out.print("웹툰 앱을 켭니다.");
+		dto.setWebtoonApp("켜짐");
+		return dto.getDmbState();
+	}
+
+	public String wtAppOff(Phone3DTO dto) {
+		System.out.print("웹툰 앱을 끕니다.");
+		dto.setWebtoonApp("꺼짐");
+		return dto.getDmbState();
+	}
+}

@@ -21,11 +21,11 @@ public class Phone3DTO extends Phone2DTO {
 		this.internetState = internetState;
 	}
 
-	public String getWtAppState() {
+	public String getwtAppState() {
 		return wtAppState;
 	}
 
-	public void setWtAppState(String wtAppState) {
+	public void setwtAppState(String wtAppState) {
 		this.wtAppState = wtAppState;
 	}
 

@@ -78,6 +78,14 @@ public class Phone3Main {
 			}
 		}
 
+		if (p3dto.getState().equals("켜짐") && p3dto.getDmbState().equals("꺼짐")) {
+			System.out.println("전원을 끄시겠습니까? 끄실거면 1을 눌러주세요.");
+			int inputMenu = p3dao.inputInt();
+			if (inputMenu == 1) {
+				p3dao.powerOff(p3dto);
+			}
+		}
+
 		if (p3dto.getState().equals("꺼짐")) {
 			System.out.println("전원이 꺼져있어 인터넷 사용이 불가능합니다. 전원을 먼저 켜주세요.");
 			System.out.println("전원을 켜시려면 1을 눌러주세요. (그 외에는 꺼짐)");
@@ -106,14 +114,6 @@ public class Phone3Main {
 				p3dao.wtAppOn(p3dto);
 			} else {
 				p3dao.wtAppOff(p3dto);
-			}
-		}
-
-		if (p3dto.getState().equals("켜짐") && p3dto.getDmbState().equals("꺼짐")) {
-			System.out.println("전원을 끄시겠습니까? 끄실거면 1을 눌러주세요.");
-			int inputMenu = p3dao.inputInt();
-			if (inputMenu == 1) {
-				p3dao.powerOff(p3dto);
 			}
 		}
 
