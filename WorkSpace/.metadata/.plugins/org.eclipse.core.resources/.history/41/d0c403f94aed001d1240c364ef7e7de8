@@ -1,0 +1,18 @@
+package pack01.list;
+
+import java.util.ArrayList;
+
+public class BoardDAO {
+
+	public BoardDTO getList(BoardDTO dto) {
+		ArrayList<BoardDTO> list = new ArrayList<BoardDTO>();
+		list.add(new BoardDTO("1", "제목1", "내용1"));
+		list.add(new BoardDTO("2", "제목2", "내용2"));
+		list.add(new BoardDTO("3", "제목3", "내용3"));
+		return dto;
+	}
+
+	public void getDisplay() {
+
+	}
+}

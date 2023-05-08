@@ -1,0 +1,12 @@
+package pack01.list;
+
+public class BoardDAO {
+
+	public void getList() {
+		
+	}
+
+	public void getDisplay() {
+
+	}
+}

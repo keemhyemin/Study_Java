@@ -1,0 +1,18 @@
+package pack01.list;
+
+public class BoardDTO {
+	
+	String strNum, title, content;
+
+	public BoardDTO(String strNum, String title, String content) {
+		this.strNum = strNum;
+		this.title = title;
+		this.content = content;
+	}
+	
+	
+	
+	
+	
+
+}

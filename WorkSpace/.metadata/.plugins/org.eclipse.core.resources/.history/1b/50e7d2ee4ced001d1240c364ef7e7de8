@@ -1,0 +1,10 @@
+package pack01.list;
+
+public class BoardMain {
+	public static void main(String[] args) {
+		BoardDAO dao = new BoardDAO();
+		dao.getList(dto);
+		dao.getDisplay();
+	}
+
+}

@@ -1,0 +1,13 @@
+package pack01.list;
+
+public class BoardDAO {
+
+	public String getList() {
+		
+		return null;
+	}
+
+	public void getDisplay() {
+
+	}
+}

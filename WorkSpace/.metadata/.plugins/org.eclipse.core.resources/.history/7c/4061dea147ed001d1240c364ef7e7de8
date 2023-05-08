@@ -1,0 +1,7 @@
+package pack01.list;
+
+public class BoardDTO {
+	private int num;
+	private String title;
+	private String content;
+}

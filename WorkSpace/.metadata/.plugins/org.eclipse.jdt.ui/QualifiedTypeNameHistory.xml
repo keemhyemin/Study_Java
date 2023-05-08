@@ -1,21 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.Deprecated"/>
-    <fullyQualifiedTypeName name="pack04.extend.CellPhone"/>
-    <fullyQualifiedTypeName name="pack04.extend.SmartPhone"/>
-    <fullyQualifiedTypeName name="pack04.extend.DmbPhone"/>
-    <fullyQualifiedTypeName name="pack05.abstrac.Animal"/>
-    <fullyQualifiedTypeName name="pack01.inter.TestInterface"/>
-    <fullyQualifiedTypeName name="pack02.inter.Audio"/>
-    <fullyQualifiedTypeName name="java.rmi.Remote"/>
-    <fullyQualifiedTypeName name="pack02.inter.RemoteControl"/>
-    <fullyQualifiedTypeName name="pack02.inter.Television"/>
-    <fullyQualifiedTypeName name="pack03.inter.AndroidOnClick"/>
-    <fullyQualifiedTypeName name="pack04.db.DataAccessObject"/>
-    <fullyQualifiedTypeName name="pack04.db.MysqlDAO"/>
-    <fullyQualifiedTypeName name="pack04.db.OracleDAO"/>
-    <fullyQualifiedTypeName name="pack01.phone1.Phone1DAO"/>
-    <fullyQualifiedTypeName name="pack01.phone1.Phone1DTO"/>
     <fullyQualifiedTypeName name="java.util.prefs.BackingStoreException"/>
     <fullyQualifiedTypeName name="pack01.nasted.A.B"/>
     <fullyQualifiedTypeName name="pack01.nasted.A.C"/>
@@ -45,10 +29,8 @@
     <fullyQualifiedTypeName name="java.util.Random"/>
     <fullyQualifiedTypeName name="pack02.horsegame.Player"/>
     <fullyQualifiedTypeName name="pack02.horsegame.PlayMain"/>
-    <fullyQualifiedTypeName name="java.io.InputStream"/>
     <fullyQualifiedTypeName name="Member"/>
     <fullyQualifiedTypeName name="Human"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="GetterSetter"/>
     <fullyQualifiedTypeName name="dao.dto.method.Human"/>
     <fullyQualifiedTypeName name="dao.dto.method.HumanDAO"/>
@@ -60,4 +42,22 @@
     <fullyQualifiedTypeName name="extend.imp.TestInterface"/>
     <fullyQualifiedTypeName name="poly.김혜민"/>
     <fullyQualifiedTypeName name="poly.전지현"/>
+    <fullyQualifiedTypeName name="java.io.BufferedReader"/>
+    <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+    <fullyQualifiedTypeName name="java.io.InputStream"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="pack01.inputstream.KhmScanner"/>
+    <fullyQualifiedTypeName name="pack02.outputstream.Ex01_SystemOut"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.io.OutputStream"/>
+    <fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
+    <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+    <fullyQualifiedTypeName name="java.io.File"/>
+    <fullyQualifiedTypeName name="java.io.Reader"/>
+    <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="java.io.Writer"/>
+    <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
 </qualifiedTypeNameHistroy>

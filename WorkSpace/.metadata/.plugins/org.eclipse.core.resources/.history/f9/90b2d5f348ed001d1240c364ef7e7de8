@@ -1,0 +1,31 @@
+package pack01.list;
+
+public class BoardDTO {
+
+	private String strNum, title, content;
+
+	public String getStrNum() {
+		return strNum;
+	}
+
+	public void setStrNum(String strNum) {
+		this.strNum = strNum;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+
+}
