@@ -5,8 +5,8 @@ public class Phone1Main {
 		Phone1DAO p1dao = new Phone1DAO();
 		Phone1DTO p1dto = new Phone1DTO("검정", "이니셜-1", "꺼짐", "대기중");
 
-		System.out.print("색상: " + p1dto.getColor() +  ", ");
-		System.out.print("모델명: " + p1dto.getModel() +  ", ");
+		System.out.print("색상: " + p1dto.getColor() + " ");
+		System.out.print("모델명: " + p1dto.getModel() + " ");
 		System.out.println("상태: " + p1dto.getState());
 
 		System.out.println();
@@ -18,19 +18,16 @@ public class Phone1Main {
 				p1dao.powerOn(p1dto);
 			} else {
 				p1dao.powerOff(p1dto);
-				System.out.println("전원이 꺼져있어 전화 받기가 불가합니다.");
-				System.out.println("전원이 꺼져있어 전화 끊기가 불가합니다.");
 			}
 		}
 
-		if (p1dto.getState().equals("켜짐") && p1dto.getCallState().equals("대기중")) {
+		if (p1dto.getState().equals("켜짐")) {
 			System.out.println("전화를 받으시겠습니까? 받으실거면 1번을 누르세요.(거절은 2번입니다.)");
 			int inputMenu = p1dao.inputInt();
 			if (inputMenu == 1) {
 				p1dao.call(p1dto);
 			} else if (inputMenu == 2) {
-				System.out.println("전화를 거절하셨습니다.");
-				System.out.println("통화중인 상태가 아닙니다. 음성 전송 & 수신이 불가합니다.");
+				p1dao.refuseCall(p1dto);
 			}
 		} else {
 			System.out.println("전원이 꺼져있어 전화 받기가 불가합니다.");
@@ -38,7 +35,14 @@ public class Phone1Main {
 
 		if (p1dto.getState().equals("켜짐") && p1dto.getCallState().equals("전화중")) {
 			p1dao.hangUp(p1dto);
-			p1dao.powerOff(p1dto);
+		}
+
+		if (p1dto.getState().equals("켜짐") && p1dto.getCallState().equals("대기중")) {
+			System.out.println("전원을 끄시겠습니까? 끄실거면 1을 눌러주세요.");
+			int inputMenu = p1dao.inputInt();
+			if (inputMenu == 1) {
+				p1dao.powerOff(p1dto);
+			}
 		}
 	}
 

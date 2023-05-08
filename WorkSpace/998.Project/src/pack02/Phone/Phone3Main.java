@@ -3,7 +3,7 @@ package pack02.Phone;
 public class Phone3Main {
 	public static void main(String[] args) {
 		Phone3DAO p3dao = new Phone3DAO();
-		Phone3DTO p3dto = new Phone3DTO("검정", "이니셜-3", "꺼짐", "대기중", "꺼짐", "정보없음", "꺼짐", "꺼짐");
+		Phone3DTO p3dto = new Phone3DTO("검정", "이니셜-3", "꺼짐", "정보없음", "꺼짐", "꺼짐");
 
 		System.out.print("색상: " + p3dto.getColor() + ", ");
 		System.out.print("모델명: " + p3dto.getModel() + ", ");
@@ -17,12 +17,12 @@ public class Phone3Main {
 			int inputMenu = p3dao.inputInt();
 			if (inputMenu == 1) {
 				p3dao.powerOn(p3dto);
-			} else {
+			} else { 
 				p3dao.powerOff(p3dto);
 			}
 		}
 
-		if (p3dto.getState().equals("켜짐") && p3dto.getCallState().equals("대기중")) {
+		if (p3dto.getState().equals("켜짐")) {
 			System.out.println("전화를 받으시겠습니까? 받으실거면 1번을 누르세요.(거절은 2번입니다.)");
 			int inputMenu = p3dao.inputInt();
 			if (inputMenu == 1) {
@@ -33,8 +33,9 @@ public class Phone3Main {
 			}
 		} else {
 			System.out.println("전원이 꺼져있어 전화 받기가 불가합니다.");
-		}
-
+	}
+		
+		
 		if (p3dto.getState().equals("꺼짐") && p3dto.getCallState().equals("대기중")) {
 			System.out.println("전원이 꺼져있어 DMB를 켤 수 없습니다. 전원을 먼저 켜주세요.");
 			System.out.println("전원을 켜시려면 1을 눌러주세요. (그 외에는 꺼짐)");

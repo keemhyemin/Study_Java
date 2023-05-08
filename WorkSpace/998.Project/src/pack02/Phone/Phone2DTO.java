@@ -6,9 +6,8 @@ public class Phone2DTO extends Phone1DTO {
 	private String channelInfo;
 	private int channel;
 
-	public Phone2DTO(String color, String model, String state, String callState, String dmbState, String channelInfo) {
-		super(color, model, state, callState);
-		this.dmbState = dmbState;
+	public Phone2DTO(String color, String model, String state, String channelInfo) {
+		super(color, model, state, channelInfo);
 		this.channelInfo = channelInfo;
 	}
 

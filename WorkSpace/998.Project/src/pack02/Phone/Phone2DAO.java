@@ -17,9 +17,10 @@ public class Phone2DAO extends Phone1DAO {
 	}
 
 	public void changeChannel(Phone2DTO dto) {
-		System.out.println("DMB방송의 채널을 변경합니다");
-		System.out.println("원하시는 채널 번호를 입력해주세요.");
-		dto.setChannel(inputInt());
-		System.out.println(dto.getChannelInfo() + " => " + dto.getChannel() +"번으로 번경됨.");
+			System.out.println("DMB방송의 채널을 변경합니다");
+			System.out.println("원하시는 채널 번호를 입력해주세요.");
+			dto.setChannel(inputInt());
+			System.out.println(dto.getChannelInfo() + " => " + dto.getChannel() + "번으로 번경됨.");
+
 	}
 }
