@@ -1,0 +1,41 @@
+package pack02.jdbc;
+
+public class EmpDTO {
+
+	private int num;
+	private String name, email;
+	
+	public EmpDTO(int num, String name, String email) {
+		super();
+		this.num = num;
+		this.name = name;
+		this.email = email;
+	}
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	
+
+}
