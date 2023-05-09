@@ -4,8 +4,7 @@ public class Phone2DAO extends Phone1DAO {
 
 	public String dmbOn(Phone2DTO dto) {
 		System.out.print("DMB 방송을 켭니다.");
-		dto.setChannelInfo("정보없음");
-		System.out.println(" 현재 채널: " + dto.getChannelInfo());
+		System.out.println(" 현재 채널: " + dto.getChannel() + ". 정보없음");
 		dto.setDmbState("시청중");
 		return dto.getDmbState();
 	}
@@ -20,7 +19,7 @@ public class Phone2DAO extends Phone1DAO {
 			System.out.println("DMB방송의 채널을 변경합니다");
 			System.out.println("원하시는 채널 번호를 입력해주세요.");
 			dto.setChannel(inputInt());
-			System.out.println(dto.getChannelInfo() + " => " + dto.getChannel() + "번으로 번경됨.");
+			System.out.println(dto.getChannel() + " => " + dto.getChannel() + "번으로 번경됨.");
 
 	}
 }

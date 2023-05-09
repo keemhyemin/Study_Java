@@ -3,12 +3,11 @@ package pack02.Phone;
 public class Phone2DTO extends Phone1DTO {
 
 	private String dmbState;
-	private String channelInfo;
 	private int channel;
 
-	public Phone2DTO(String color, String model, String state, String channelInfo) {
-		super(color, model, state, channelInfo);
-		this.channelInfo = channelInfo;
+	public Phone2DTO(String color, String model, String state, String callState) {
+		super(color, model, state, callState);
+
 	}
 
 	public String getDmbState() {
@@ -27,11 +26,4 @@ public class Phone2DTO extends Phone1DTO {
 		this.channel = channel;
 	}
 
-	public String getChannelInfo() {
-		return channelInfo;
-	}
-
-	public void setChannelInfo(String channelInfo) {
-		this.channelInfo = channelInfo;
-	}
 }

@@ -3,12 +3,12 @@ package pack02.Phone;
 public class Phone2Main {
 	public static void main(String[] args) {
 		Phone2DAO p2dao = new Phone2DAO();
-		Phone2DTO p2dto = new Phone2DTO("검정", "이니셜-2", "꺼짐", "정보없음");
+		Phone2DTO p2dto = new Phone2DTO("검정", "이니셜-2", "꺼짐", "대기중");
 
 		System.out.print("색상: " + p2dto.getColor() + " ");
 		System.out.print("모델명: " + p2dto.getModel() + " ");
 		System.out.print("상태: " + p2dto.getState() + " ");
-		System.out.println("채널: " + p2dto.getChannelInfo());
+		System.out.println("채널: " + p2dto.getChannel());
 
 		System.out.println();
 		if (p2dto.getState().equals("꺼짐")) {
