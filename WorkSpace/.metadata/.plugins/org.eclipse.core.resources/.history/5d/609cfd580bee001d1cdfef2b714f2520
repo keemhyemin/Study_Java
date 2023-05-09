@@ -1,0 +1,17 @@
+package pack03.stackque;
+
+import java.util.Stack;
+
+public class StackMain {
+	public static void main(String[] args) {
+		// 실제로 사용빈도가 낮음
+		// last-in-first-out(LIFO):
+		// push
+		Stack<Integer> intStack = new Stack<>();
+		intStack.push(10);
+		intStack.push(20);
+		System.out.println(intStack.pop());
+		System.out.println(intStack.pop());
+		
+	}
+}
