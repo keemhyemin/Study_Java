@@ -3,12 +3,12 @@ package pack02.Phone;
 public class Phone3Main {
 	public static void main(String[] args) {
 		Phone3DAO p3dao = new Phone3DAO();
-		Phone3DTO p3dto = new Phone3DTO("검정", "이니셜-3", "꺼짐", "정보없음", "꺼짐", "꺼짐");
+		Phone3DTO p3dto = new Phone3DTO("검정", "이니셜-3", "꺼짐", "대기중");
 
 		System.out.print("색상: " + p3dto.getColor() + ", ");
 		System.out.print("모델명: " + p3dto.getModel() + ", ");
 		System.out.print("상태: " + p3dto.getState() + ", ");
-		System.out.println("채널: " + p3dto.getChannelInfo());
+		System.out.println("채널: " + p3dto.getChannel());
 
 		System.out.println();
 		if (p3dto.getState().equals("꺼짐")) {
@@ -17,7 +17,7 @@ public class Phone3Main {
 			int inputMenu = p3dao.inputInt();
 			if (inputMenu == 1) {
 				p3dao.powerOn(p3dto);
-			} else { 
+			} else {
 				p3dao.powerOff(p3dto);
 			}
 		}
@@ -33,9 +33,8 @@ public class Phone3Main {
 			}
 		} else {
 			System.out.println("전원이 꺼져있어 전화 받기가 불가합니다.");
-	}
-		
-		
+		}
+
 		if (p3dto.getState().equals("꺼짐") && p3dto.getCallState().equals("대기중")) {
 			System.out.println("전원이 꺼져있어 DMB를 켤 수 없습니다. 전원을 먼저 켜주세요.");
 			System.out.println("전원을 켜시려면 1을 눌러주세요. (그 외에는 꺼짐)");
@@ -55,7 +54,7 @@ public class Phone3Main {
 			} else {
 				p3dao.dmbOff(p3dto);
 			}
-		} else {
+		} else if (p3dto.getState().equals("켜짐") && p3dto.getCallState().equals("전화중")) {
 			System.out.println("통화 중인 상태에서는 DMB 방송을 켤 수 없습니다.");
 			System.out.println("전화를 끊으실거면 1을 눌러주세요.");
 			int inputMenu = p3dao.inputInt();
@@ -65,7 +64,7 @@ public class Phone3Main {
 			}
 		}
 
-		if (p3dto.getDmbState().equals("시청중")) {
+		if (p3dto.getState().equals("켜짐") && p3dto.getDmbState().equals("시청중")) {
 			p3dao.changeChannel(p3dto);
 		} else {
 			System.out.println("DMB가 켜져있지않아 채널 변경이 불가합니다.");
@@ -108,6 +107,8 @@ public class Phone3Main {
 			} else {
 				p3dao.wtAppOff(p3dto);
 			}
+		} else {
+			System.out.println("인터넷이 켜져있지않아 웹툰 앱을 실행 할 수 없습니다.");
 		}
 
 		if (p3dto.getState().equals("켜짐") && p3dto.getDmbState().equals("꺼짐")) {

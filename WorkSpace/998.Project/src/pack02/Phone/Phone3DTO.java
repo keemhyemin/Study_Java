@@ -5,10 +5,8 @@ public class Phone3DTO extends Phone2DTO {
 	private String internetState;
 	private String wtAppState;
 
-	public Phone3DTO(String color, String model, String state, String channelInfo, String internetState, String wtAppState) {
-		super(color, model, state, channelInfo);
-		this.internetState = internetState;
-		this.wtAppState = wtAppState;
+	public Phone3DTO(String color, String model, String state, String callState) {
+		super(color, model, state, callState);
 	}
 
 	public String getInternetState() {
