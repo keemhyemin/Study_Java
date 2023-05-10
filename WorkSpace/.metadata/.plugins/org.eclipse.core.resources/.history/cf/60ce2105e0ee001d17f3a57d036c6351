@@ -1,0 +1,10 @@
+package pack05.email;
+
+public class SendEmail {
+	public static void main(String[] args) {
+		
+	}
+	// 1. 단순하게 텍스트만 있는 이메일 : SimpleEmail
+	// 2. 첨부파일이나 url등으로 이미지가 있는 이메일 : MultiPartEmail
+	// 3. 모든 기능을 가지고 html 태그까지 사용가능한 이메일 : HtmlEmail
+}
