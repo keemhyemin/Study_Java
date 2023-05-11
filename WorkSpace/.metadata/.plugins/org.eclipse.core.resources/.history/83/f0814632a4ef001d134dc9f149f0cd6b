@@ -1,0 +1,41 @@
+package pack06.go.data;
+
+import java.io.IOException;
+import java.util.Iterator;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+import org.jsoup.Jsoup;
+
+public class JsoupAPI2 {
+	public static void main(String[] args) {
+		// https://bigdata.gwangju.go.kr/gjAPI/getMuLib/getMuLiblist.rd?apiSrvCd=0035&pageNo=1&numOfRow=10
+		String url = "https://bigdata.gwangju.go.kr/gjAPI/getMuLib/getMuLiblist.rd";
+		String doc = null;
+		try {
+			doc = Jsoup.connect(url).data("apiSrvCd", "0035").data("pageNo", "1").data("numOfRow", "10")
+			.timeout(1000*10)
+			.userAgent("Chrome")
+			.ignoreContentType(true)
+			.execute().body();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		
+		JSONParser parser = new JSONParser();
+		try {	
+			JSONObject jsonObj = (JSONObject) parser.parse(doc);
+			JSONArray array = (JSONArray) jsonObj.get("data");
+			for(int i=0; i<array.size(); i++) {
+				JSONObject tempObj = (JSONObject) array.get(i);
+				System.out.println("제목 : " + tempObj.get("signature"));
+			}
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		
+	}
+}
+
