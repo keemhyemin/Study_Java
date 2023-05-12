@@ -1,0 +1,38 @@
+package pack07.last.jdbc;
+
+import java.util.Scanner;
+
+public class BoardMain {
+	// main => html, jsp, android app 화면 등의 실제 사용자 눈에 보이는 메인화면
+	public void displayMenu() {
+		System.out.println("게시판 프로그램");
+		System.out.println("==== 메뉴 ====");
+		System.out.println("게시글 조회 : S"); // Select => Create
+		System.out.println("게시글 추가 : I"); // Insert => Read
+		System.out.println("게시글 수정 : U"); // Update
+		System.out.println("게시글 삭제 : D"); // Delete
+		System.out.println("종료 : E");
+		System.out.println("===============");
+	}
+	// static 멤버는 먼저 메모리에 로딩 되어야하기때문에 같은 static 멤버로 만들거나,
+	// 클래스를 인스턴스화 하여 static멤버의 메모리 공간에 올려서 사용한다.
+
+	public static void main(String[] args) {
+		BoardDAO dao = new BoardDAO();
+		// dao.selectList();
+		// 사용자가 검색한 내용을 토대로 목록을 보여주기
+		//Scanner sc = new Scanner(System.in);
+		//dao.selectList(sc.nextLine());
+		dao.inserBoard();
+		
+		
+		// BoardMain bm = new BoardMain();
+		// bm.displayMenu();
+		
+//		Scanner sc = new Scanner(System.in);
+//		String testMenu = sc.nextLine();
+//		System.out.println(testMenu);
+		// =============나중에 기능 완료 후 재사용이 가능하게 반복문을 통해서 반복시킴
+	}
+
+}
