@@ -5,8 +5,8 @@ public class Phone1Main {
 		Phone1DAO p1dao = new Phone1DAO();
 		Phone1DTO p1dto = new Phone1DTO("검정", "이니셜-1", "꺼짐", "대기중");
 
-		System.out.print("색상: " + p1dto.getColor() + ", ");
-		System.out.print("모델명: " + p1dto.getModel() + ", ");
+		System.out.print("색상: " + p1dto.getColor() + " ");
+		System.out.print("모델명: " + p1dto.getModel() + " ");
 		System.out.println("상태: " + p1dto.getState());
 
 		System.out.println();
@@ -30,14 +30,7 @@ public class Phone1Main {
 				p1dao.refuseCall(p1dto);
 			}
 		} else {
-			System.out.println("전원이 꺼져있어 전화 받기가 불가합니다. 전원을 먼저 켜주세요.");
-			System.out.println("전원을 켜시려면 1을 눌러주세요. (그 외에는 꺼짐)");
-			int inputMenu = p1dao.inputInt();
-			if (inputMenu == 1) {
-				p1dao.powerOn(p1dto);
-			} else {
-				p1dao.powerOff(p1dto);
-			}
+			System.out.println("전원이 꺼져있어 전화 받기가 불가합니다.");
 		}
 
 		if (p1dto.getState().equals("켜짐") && p1dto.getCallState().equals("전화중")) {

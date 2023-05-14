@@ -28,17 +28,11 @@ public class Phone3Main {
 			if (inputMenu == 1) {
 				p3dao.call(p3dto);
 			} else if (inputMenu == 2) {
-				p3dao.refuseCall(p3dto);
+				System.out.println("전화를 거절하셨습니다.");
+				System.out.println("통화중인 상태가 아닙니다. 음성 전송 & 수신이 불가합니다.");
 			}
 		} else {
 			System.out.println("전원이 꺼져있어 전화 받기가 불가합니다.");
-			System.out.println("전원을 켜시려면 1을 눌러주세요. (그 외에는 꺼짐)");
-			int inputMenu = p3dao.inputInt();
-			if (inputMenu == 1) {
-				p3dao.powerOn(p3dto);
-			} else {
-				p3dao.powerOff(p3dto);
-			}
 		}
 
 		if (p3dto.getState().equals("꺼짐") && p3dto.getCallState().equals("대기중")) {
@@ -110,11 +104,8 @@ public class Phone3Main {
 			int inputMenu = p3dao.inputInt();
 			if (inputMenu == 1) {
 				p3dao.wtAppOn(p3dto);
-				System.out.println("웹툰 앱을 종료하시겠습니까? 종료하실거면 -1을 누르세요.");
-				p3dao.inputInt();
-				if(inputMenu == -1) {
-					p3dao.wtAppOff(p3dto);
-				}
+			} else {
+				p3dao.wtAppOff(p3dto);
 			}
 		} else {
 			System.out.println("인터넷이 켜져있지않아 웹툰 앱을 실행 할 수 없습니다.");
