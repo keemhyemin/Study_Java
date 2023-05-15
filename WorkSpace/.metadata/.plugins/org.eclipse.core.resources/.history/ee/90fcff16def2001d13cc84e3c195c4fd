@@ -44,12 +44,7 @@ public class BoardMain {
 			}
 		} else if (inputMenu == 4) {// --------------------------------------------> 게시판
 			System.out.println("========== 게시판 ==========");
-			if (dto.getLoginState().equals("로그인")) {
-				// 게시판메소드
-			} else {
-				System.out.println("로그인이 되어있지 않아 게시판 사용이 불가합니다. 로그인 먼저 진행해주세요.");
-				dao.isSignIn(dto);
-			}
+			// 로그인 되면 진행
 		} else {
 			System.out.println("프로그램이 종료되었습니다.");
 		}
