@@ -1,0 +1,38 @@
+package pack03.Board;
+
+import java.util.Scanner;
+
+public class BoardMain {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		BoardDTO dto = new BoardDTO();
+		BoardDAO dao = new BoardDAO();
+		System.out.println("========== MENU ==========");
+		System.out.println("1. 로그인 2. 회원가입 3. 회원정보수정 4. 게시판 0. 종료");
+		int inputMenu = dao.inputint();
+		if (inputMenu == 1) {
+			System.out.println("========== 로그인 ==========");
+			System.out.print("ID: ");
+			dto.setId(sc.nextLine());
+			System.out.print("PW: ");
+			dto.setPw(sc.nextLine());
+			dao.login(dto);
+			if (dao.login(dto)) {
+				// 로그인 true -> 메뉴 보여주기
+			} else {
+				System.out.println("회원가입");
+			}
+		} else if (inputMenu == 2) {
+			System.out.println("========== 회원가입 ==========");
+		} else if (inputMenu == 3) {
+			System.out.println("========== 회원정보수정 ==========");
+			// 로그인 되면 진행
+		} else if (inputMenu == 4) {
+			System.out.println("========== 게시판 ==========");
+			// 로그인 되면 진행
+		} else {
+			System.out.println("프로그램이 종료되었습니다.");
+		}
+	}
+
+}

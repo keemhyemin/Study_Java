@@ -1,0 +1,52 @@
+package pack03.Board;
+
+import java.util.Scanner;
+
+public class BoardMain {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		BoardDTO dto = new BoardDTO();
+		BoardDAO dao = new BoardDAO();
+		System.out.println("========== MENU ==========");
+		System.out.println("1. 로그인 2. 회원가입 3. 회원정보수정 4. 게시판 0. 종료");
+	
+		int inputMenu = dao.inputint();
+		if (inputMenu == 1) {
+			dao.signIN(dto);
+			if () {
+				System.out.println("원하시는 작업을 선택해주세요.");
+				System.out.println("1. 회원정보수정 2. 게시판 0. 종료");
+				inputMenu = dao.inputint();
+				if(inputMenu == 1) {
+					// 회원정보수정 메소드
+				} else if(inputMenu == 2) {
+					// 게시판 메소드
+				} else {
+					System.out.println("프로그램이 종료되었습니다.");
+				}
+			} else {
+				System.out.println("1. 로그인 재시도 2. 회원가입 0. 종료");
+				inputMenu = dao.inputint();
+				if (inputMenu == 1) {
+					dao.signIN(dto);
+				} else if(inputMenu == 2) {
+					// 회원가입메소드
+				} else {
+					System.out.println("프로그램 종료되었습니다.");
+				}
+			}
+		} else if (inputMenu == 2) {
+			dao.signUp();
+		} else if (inputMenu == 3) {
+			System.out.println("========== 회원정보수정 ==========");
+			// 로그인 되면 진행
+			// 회원정보수정 후 원하는 작업
+		} else if (inputMenu == 4) {
+			System.out.println("========== 게시판 ==========");
+			// 로그인 되면 진행
+		} else {
+			System.out.println("프로그램이 종료되었습니다.");
+		}
+	}
+
+}

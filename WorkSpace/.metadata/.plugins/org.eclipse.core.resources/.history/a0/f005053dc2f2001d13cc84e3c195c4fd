@@ -1,0 +1,85 @@
+package pack03.Board;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class BoardDAO {
+	Connection conn;
+	PreparedStatement ps;
+	ResultSet rs;
+
+	Scanner sc = new Scanner(System.in);
+
+	public int inputint() {
+		while (true) {
+			try {
+				int rtnInt = Integer.parseInt(sc.nextLine());
+				return rtnInt;
+			} catch (Exception e) {
+				System.out.println("숫자만 입력해주세요.");
+			}
+		}
+	}
+	
+	public Connection getConn() {
+		String url = ("jdbc:oracle:thin:@127:0.0.1:1521:xe");
+		try {
+			Class.forName("oralce.jdbc.driver.OracleDriver");
+			conn = DriverManager.getConnection(url, "hanul", "0000");
+		} catch (Exception e) {
+			System.out.println("알 수 없는 오류 발생! 개발자에게 문의하세요.");
+		}
+		return conn;
+	}
+	
+	public void dbClose() {
+		try {
+			if (rs != null) { rs.close(); }
+			if (ps != null) { ps.close(); }
+			if (conn != null) { conn.close(); }
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	public boolean login(BoardDTO dto) {
+		String url = "jdbc:oracle:thin:@localhost:1521:xe";
+		try {
+			Class.forName("oracle.jdbc.driver.OracleDriver");
+			System.out.println("========== 로그인 ==========");
+			System.out.print("ID: ");
+			dto.setMember_id(sc.nextLine());
+			System.out.print("PW: ");
+			dto.setMember_pw(sc.nextLine());
+			conn = DriverManager.getConnection(url, dto.getMember_id(), dto.getMember_pw());
+			ps.getConnection().prepareStatement("SELECT MEMBER_NAME FROM MEMBER WHERE MEMBER_ID = dto.getMember_id() AND MEMBER_PW = dto.getMember_pw()");
+			System.out.println("로그인에 성공하셨습니다.");
+			if (!conn.isClosed()) {
+				System.out.println("접속: " + conn.getMetaData().getDatabaseProductVersion());
+				return true;
+			}
+		} catch (Exception e) {
+			System.out.println("로그인에 실패하셨습니다.");
+		}
+		return false;
+	}
+
+	public void signUp() { // 오류 고쳐야함
+		System.out.println("========== 회원가입 ==========");
+//		try {
+//			conn = getConn();
+//			ps = conn.prepareStatement("INSERT INTO MEMBER (MEMBER_ID, MEMBER_PW, MEMBER_NAME, MEMBER_CALL, MEMBER_AGE) "
+//					+ "VALUES(id , pw, name, call, age)");
+//			System.out.print("ID: ");
+//			ps.setString(1, sc.nextLine());
+//			
+//		} catch (SQLException e) {
+//			e.printStackTrace();
+//		}
+	}
+
+}

@@ -1,0 +1,86 @@
+public class BoardDTO {
+
+	private int age, board_no;
+	private String id, pw, name, call, board_title, board_content, writer, write_date;
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public int getBoard_no() {
+		return board_no;
+	}
+
+	public void setBoard_no(int board_no) {
+		this.board_no = board_no;
+	}
+
+	public String getId() {
+		return id;
+	}
+
+	public void setId(String id) {
+		this.id = id;
+	}
+
+	public String getPw() {
+		return pw;
+	}
+
+	public void setPw(String pw) {
+		this.pw = pw;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getCall() {
+		return call;
+	}
+
+	public void setCall(String call) {
+		this.call = call;
+	}
+
+	public String getBoard_title() {
+		return board_title;
+	}
+
+	public void setBoard_title(String board_title) {
+		this.board_title = board_title;
+	}
+
+	public String getBoard_content() {
+		return board_content;
+	}
+
+	public void setBoard_content(String board_content) {
+		this.board_content = board_content;
+	}
+
+	public String getWriter() {
+		return writer;
+	}
+
+	public void setWriter(String writer) {
+		this.writer = writer;
+	}
+
+	public String getWrite_date() {
+		return write_date;
+	}
+
+	public void setWrite_date(String write_date) {
+		this.write_date = write_date;
+	}
+
+}
