@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class BoardMain {
 	public static void main(String[] args) {
+		// !!!!!!!!!!!!!!!!!!!!!!! 회원탈퇴 메소드 추가해야함!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		Scanner sc = new Scanner(System.in);
 		BoardDTO dto = new BoardDTO("로그아웃");
 		BoardDAO dao = new BoardDAO();
@@ -20,39 +21,132 @@ public class BoardMain {
 				} else if (inputMenu == 2) { // ------------------------------------> 로그인 성공, 게시판
 					// 게시판 메소드
 				} else {
-					System.out.println("프로그램이 종료되었습니다.");
+					dao.exit(dto);
 				}
 			} else { // ------------------------------------------------------------> 로그인 실패
 				System.out.println("1. 로그인 재시도 2. 회원가입 0. 종료");
 				inputMenu = dao.inputint();
 				if (inputMenu == 1) { // -------------------------------------------> 로그인 실패, 재시도
 					dao.isSignIn(dto);
+					if (dao.isSignIn(dto)) {
+						System.out.println("원하시는 작업을 선택해주세요.");
+						System.out.println("1. 회원정보수정 2. 게시판 0. 종료");
+						inputMenu = dao.inputint();
+						if (inputMenu == 1) {
+							dao.editMemInfo();
+						} else if (inputMenu == 2) {
+							// 게시판 메소드
+						} else {
+							dao.exit(dto);
+						}
+					}
 				} else if (inputMenu == 2) { // ------------------------------------> 로그인 실패, 회원가입
 					dao.signUp();
+					dao.isSignIn(dto);
+					if (dao.isSignIn(dto)) {
+						System.out.println("원하시는 작업을 선택해주세요.");
+						System.out.println("1. 회원정보수정 2. 게시판 0. 종료");
+						inputMenu = dao.inputint();
+						if (inputMenu == 1) {
+							dao.editMemInfo();
+						} else if (inputMenu == 2) {
+							// 게시판 메소드
+						} else {
+							dao.exit(dto);
+						}
+					}
 				} else {
-					System.out.println("프로그램이 종료되었습니다.");
+					dao.exit(dto);
 				}
 			}
-		} else if (inputMenu == 2) {
+		} else if (inputMenu == 2) { // -------------------------------------------> 회원가입
 			dao.signUp();
+			dao.isSignIn(dto);
+			if (dao.isSignIn(dto)) {
+				System.out.println("원하시는 작업을 선택해주세요.");
+				System.out.println("1. 회원정보수정 2. 게시판 0. 종료");
+				inputMenu = dao.inputint();
+				if (inputMenu == 1) {
+					dao.editMemInfo();
+				} else if (inputMenu == 2) {
+					// 게시판 메소드
+				} else {
+					dao.exit(dto);
+				}
+			}
 		} else if (inputMenu == 3) { // -------------------------------------------> 회원정보수정
 			if (dto.getLoginState().equals("로그인")) {
 				dao.editMemInfo();
 			} else {
 				System.out.println("로그인이 되어있지 않아 수정이 불가합니다. 로그인 먼저 진행해주세요.");
-				dao.isSignIn(dto);
+				if (dao.isSignIn(dto)) {
+					dao.editMemInfo();
+				} else {
+					System.out.println("1. 로그인 재시도 2. 회원가입 0. 종료");
+					inputMenu = dao.inputint();
+					if (inputMenu == 1) { // -------------------------------------------> 로그인 실패, 재시도
+						dao.isSignIn(dto);
+						dao.editMemInfo();
+					} else if (inputMenu == 2) { // ------------------------------------> 로그인 실패, 회원가입
+						dao.signUp();
+						dao.isSignIn(dto);
+					} else {
+						dao.exit(dto);
+					}
+				}
 			}
 		} else if (inputMenu == 4) {// --------------------------------------------> 게시판
-			System.out.println("========== 게시판 ==========");
 			if (dto.getLoginState().equals("로그인")) {
-				// 게시판메소드
+				System.out.println("========== 게시판 ==========");
+				dao.boardMenu();
+				System.out.println("원하시는 작업을 선택해주세요.");
+				inputMenu = dao.inputint();
+				if (inputMenu == 1) {
+					dao.selectList();
+				} else if (inputMenu == 2) {
+					dao.insertBoard();
+				} else if (inputMenu == 3) {
+					dao.updateBoard();
+				} else if (inputMenu == 4) {
+					dao.deleteBoard();
+				} else {
+					dao.exit(dto);
+				}
 			} else {
 				System.out.println("로그인이 되어있지 않아 게시판 사용이 불가합니다. 로그인 먼저 진행해주세요.");
-				dao.isSignIn(dto);
+				if (dao.isSignIn(dto)) {
+					dao.boardMenu();
+					System.out.println("원하시는 작업을 선택해주세요.");
+					inputMenu = dao.inputint();
+					if (inputMenu == 1) {
+						dao.selectList();
+					} else if (inputMenu == 2) {
+						dao.insertBoard();
+					} else if (inputMenu == 3) {
+						dao.updateBoard();
+					} else if (inputMenu == 4) {
+						dao.deleteBoard();
+					} else {
+						dao.exit(dto);
+					}
+				} else {
+					System.out.println("1. 로그인 재시도 2. 회원가입 0. 종료");
+					inputMenu = dao.inputint();
+					if (inputMenu == 1) { // -------------------------------------------> 로그인 실패, 재시도
+						dao.isSignIn(dto);
+						dao.boardMenu();
+					} else if (inputMenu == 2) { // ------------------------------------> 로그인 실패, 회원가입
+						dao.signUp();
+						dao.isSignIn(dto);
+					} else {
+						dao.exit(dto);
+					}
+				}
 			}
 		} else {
-			System.out.println("프로그램이 종료되었습니다.");
+			dao.exit(dto);
 		}
+
 	}
 
 }

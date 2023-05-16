@@ -10,7 +10,7 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="nextLine("/>
 		<list key="findhistory">
 			<item value="nextLine("/>
 		</list>

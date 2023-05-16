@@ -2,23 +2,13 @@ package pack03.Board;
 
 public class BoardDTO {
 
-	private int member_age, board_no;
-	private String member_id, member_pw, member_name, membercall, board_title, board_content, writer, write_date;
+	private int member_age, text_number;
+	private String member_id, member_pw, member_name, membercall, title, contents, write_date;
 	private String loginState;
 
 	public BoardDTO(String loginState) {
 		this.loginState = loginState;
 	}
-	
-	public String getLoginState() {
-		return loginState;
-	}
-
-	public void setLoginState(String loginState) {
-		this.loginState = loginState;
-	}
-
-	
 
 	public int getMember_age() {
 		return member_age;
@@ -28,12 +18,12 @@ public class BoardDTO {
 		this.member_age = member_age;
 	}
 
-	public int getBoard_no() {
-		return board_no;
+	public int getText_number() {
+		return text_number;
 	}
 
-	public void setBoard_no(int board_no) {
-		this.board_no = board_no;
+	public void setText_number(int text_number) {
+		this.text_number = text_number;
 	}
 
 	public String getMember_id() {
@@ -68,28 +58,20 @@ public class BoardDTO {
 		this.membercall = membercall;
 	}
 
-	public String getBoard_title() {
-		return board_title;
+	public String getTitle() {
+		return title;
 	}
 
-	public void setBoard_title(String board_title) {
-		this.board_title = board_title;
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
-	public String getBoard_content() {
-		return board_content;
+	public String getContents() {
+		return contents;
 	}
 
-	public void setBoard_content(String board_content) {
-		this.board_content = board_content;
-	}
-
-	public String getWriter() {
-		return writer;
-	}
-
-	public void setWriter(String writer) {
-		this.writer = writer;
+	public void setContents(String contents) {
+		this.contents = contents;
 	}
 
 	public String getWrite_date() {
@@ -98,6 +80,14 @@ public class BoardDTO {
 
 	public void setWrite_date(String write_date) {
 		this.write_date = write_date;
+	}
+
+	public String getLoginState() {
+		return loginState;
+	}
+
+	public void setLoginState(String loginState) {
+		this.loginState = loginState;
 	}
 
 }

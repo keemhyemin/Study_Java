@@ -2,11 +2,17 @@
 <section name="Workbench">
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="13.Collection"/>
+			<item value="998.Project"/>
+			<item value="997.Board"/>
 			<item value="14.ExternalAPI_Maven"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="13.Collection"/>
+			<item value="998.Project"/>
+			<item value="997.Board"/>
 			<item value="14.ExternalAPI_Maven"/>
 		</list>
 		<list key="version">
