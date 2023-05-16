@@ -14,12 +14,31 @@ public class BoardMain {
 		if (inputMenu == 1) {
 			if (dao.isSignIn(dto)) { // --------------------------------------------> 로그인 성공
 				System.out.println("원하시는 작업을 선택해주세요.");
-				System.out.println("1. 회원정보수정 2. 게시판 0. 종료");
+				System.out.println("1. 회원정보수정 · 탈퇴 2. 게시판 0. 종료");
 				inputMenu = dao.inputint();
 				if (inputMenu == 1) { // -------------------------------------------> 로그인 성공, 회원정보수정
-					dao.editMemInfo();
+					System.out.println("1. 회원정보수정 2. 회원 탈퇴");
+					inputMenu = dao.inputint();
+					if (inputMenu == 1) {
+						dao.updateMemInfo();
+					} else {
+						dao.deleteMember();
+					}
 				} else if (inputMenu == 2) { // ------------------------------------> 로그인 성공, 게시판
-					// 게시판 메소드
+					dao.boardMenu();
+					System.out.println("원하시는 작업을 선택해주세요.");
+					inputMenu = dao.inputint();
+					if (inputMenu == 1) {
+						dao.selectList();
+					} else if (inputMenu == 2) {
+						dao.insertBoard();
+					} else if (inputMenu == 3) {
+						dao.updateBoard();
+					} else if (inputMenu == 4) {
+						dao.deleteBoard();
+					} else {
+						dao.exit(dto);
+					}
 				} else {
 					dao.exit(dto);
 				}
@@ -30,10 +49,10 @@ public class BoardMain {
 					dao.isSignIn(dto);
 					if (dao.isSignIn(dto)) {
 						System.out.println("원하시는 작업을 선택해주세요.");
-						System.out.println("1. 회원정보수정 2. 게시판 0. 종료");
+						System.out.println("1. 회원정보수정 2. 게시판 0. 종료"); // 탈퇴 메소드, 게시판 메소드 추가해야함!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 						inputMenu = dao.inputint();
 						if (inputMenu == 1) {
-							dao.editMemInfo();
+							dao.updateMemInfo();
 						} else if (inputMenu == 2) {
 							// 게시판 메소드
 						} else {
@@ -45,10 +64,10 @@ public class BoardMain {
 					dao.isSignIn(dto);
 					if (dao.isSignIn(dto)) {
 						System.out.println("원하시는 작업을 선택해주세요.");
-						System.out.println("1. 회원정보수정 2. 게시판 0. 종료");
+						System.out.println("1. 회원정보수정 2. 게시판 0. 종료"); // 탈퇴 메소드, 게시판 메소드 추가해야함!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 						inputMenu = dao.inputint();
 						if (inputMenu == 1) {
-							dao.editMemInfo();
+							dao.updateMemInfo();
 						} else if (inputMenu == 2) {
 							// 게시판 메소드
 						} else {
@@ -67,7 +86,7 @@ public class BoardMain {
 				System.out.println("1. 회원정보수정 2. 게시판 0. 종료");
 				inputMenu = dao.inputint();
 				if (inputMenu == 1) {
-					dao.editMemInfo();
+					dao.updateMemInfo();
 				} else if (inputMenu == 2) {
 					// 게시판 메소드
 				} else {
@@ -76,17 +95,17 @@ public class BoardMain {
 			}
 		} else if (inputMenu == 3) { // -------------------------------------------> 회원정보수정
 			if (dto.getLoginState().equals("로그인")) {
-				dao.editMemInfo();
+				dao.updateMemInfo();
 			} else {
 				System.out.println("로그인이 되어있지 않아 수정이 불가합니다. 로그인 먼저 진행해주세요.");
 				if (dao.isSignIn(dto)) {
-					dao.editMemInfo();
+					dao.updateMemInfo();
 				} else {
 					System.out.println("1. 로그인 재시도 2. 회원가입 0. 종료");
 					inputMenu = dao.inputint();
 					if (inputMenu == 1) { // -------------------------------------------> 로그인 실패, 재시도
 						dao.isSignIn(dto);
-						dao.editMemInfo();
+						dao.updateMemInfo();
 					} else if (inputMenu == 2) { // ------------------------------------> 로그인 실패, 회원가입
 						dao.signUp();
 						dao.isSignIn(dto);

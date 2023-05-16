@@ -106,7 +106,7 @@ public class BoardDAO {
 		}
 	}
 
-	public void editMemInfo() { // 회원정보수정
+	public void updateMemInfo() { // 회원정보수정
 		System.out.println("========== 회원정보수정 ==========");
 		try {
 			conn = getConn();
