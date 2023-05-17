@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
-    <fullyQualifiedTypeName name="pack01.list.Ex02_Vector"/>
-    <fullyQualifiedTypeName name="java.util.Vector"/>
-    <fullyQualifiedTypeName name="pack01.list.TestDTO"/>
-    <fullyQualifiedTypeName name="java.lang.Boolean"/>
     <fullyQualifiedTypeName name="zzz.BoardDAO"/>
     <fullyQualifiedTypeName name="zzz.BoardDTO"/>
     <fullyQualifiedTypeName name="pack02.Phone.Phone1DTO"/>
@@ -44,10 +39,6 @@
     <fullyQualifiedTypeName name="org.apache.commons.mail.HtmlEmail"/>
     <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
     <fullyQualifiedTypeName name="pack05.email.SendEmail"/>
-    <fullyQualifiedTypeName name="org.json.simple.parser.JSONParser"/>
-    <fullyQualifiedTypeName name="org.json.simple.JSONArray"/>
-    <fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
-    <fullyQualifiedTypeName name="org.jsoup.Jsoup"/>
     <fullyQualifiedTypeName name="pack07.last.jdbc.BoardMain"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
@@ -60,4 +51,13 @@
     <fullyQualifiedTypeName name="pack03.Board.BoardDAO"/>
     <fullyQualifiedTypeName name="pack03.Board.BoardDTO"/>
     <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="java.sql.Date"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="org.jsoup.Jsoup"/>
+    <fullyQualifiedTypeName name="java.io.IOException"/>
+    <fullyQualifiedTypeName name="org.json.simple.parser.JSONParser"/>
+    <fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
+    <fullyQualifiedTypeName name="org.json.simple.JSONArray"/>
 </qualifiedTypeNameHistroy>
