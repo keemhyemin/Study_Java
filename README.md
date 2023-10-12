@@ -1,2 +1,2 @@
-# GitTest
-깃허브 연습용
+# Study_Java
+Java 수업
